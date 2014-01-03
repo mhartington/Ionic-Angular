@@ -1,0 +1,35 @@
+<nav-page ng-controller="EmployeeDetailCtrl">
+	<side-menus>
+		<!-- Main Content -->
+		<pane side-menu-content>
+			<header-bar left-buttons="leftButtons" type="bar-positive" align-title="center">
+			</header-bar>
+			<tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
+				<tab  icon-on="icon ion-ios7-filing">
+					<content has-header="true" has-footer="true">
+						<list>
+							<ul ng-repeat="page in product.pages">
+								<li>{{page.id}}</li>
+                             <li>{{page.content}}</li>
+							</ul>
+						</list>
+					</content>
+				</tab>
+
+			</tabs>
+		</pane>
+		<!-- Left menu -->
+		<side-menu side="left">
+			<content ng-controller="EmployeeListCtrl">
+				<list class="scroll">
+					<a class="item" href="#/products">Home</a>
+					<a ng-repeat="product in products" class="item item-thumbnail-left" ng-click="go('/products/' + product.id)">
+						<img ng-src="pics/{{product.thumb}}">
+						<h2>{{product.sku}}</h2>
+						<p>{{product.title}}</p>
+					</a>
+				</list>
+			</content>
+		</side-menu>
+	</side-menus>
+</nav-page>
