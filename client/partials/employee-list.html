@@ -1,0 +1,21 @@
+<nav-page>
+	<div class="bar bar-header bar-positive">
+  <h1 class="title">
+  Hanna Instrument
+  </h1>
+</div>
+	<header-bar type="bar-positive" align-title="center" title="'Hanna Instrument'">
+	</header-bar>
+	
+	<content has-header="true">
+	<list>
+	<a class="item item-thumbnail-left" ng-click="go('/employees/' + employee.id)" 
+		  ng-repeat="employee in employees" 
+		  >
+		<img ng-src="http://placehold.it/{{employee.thumb}}">
+		<p>{{employee.sku}}</p>
+		<p>{{employee.title}}</p>
+	</a>
+</list>
+</content>
+</nav-page>

@@ -2,27 +2,50 @@
 
 (function () {
 
-   var products =[
-   {
-    "id": "1",
-    "sku": "Item 1",
-    "thumb": "100x100",
-    "pages": [
-     {
-        "id": "360",
-        "content":"stuff"
-      },
-     {
-        "id": "Feature",
-        "content":"Feature stuff"
-      },
-     {
-        "id": "Data",
-        "content":"Data stuff"
-      }
-    ]
-  }
-],
+	   var products =[
+	   {
+		"id": "1",
+		"title":"Titrator",
+		"sku": "Item 1",
+		"thumb": "100x100",
+		"pages": [
+		 {
+			"id": "360",
+			"content":"stuff"
+		  },
+		 {
+			"id": "Feature",
+			"content":"Feature stuff"
+		  },
+		 {
+			"id": "Data",
+			"content":"Data stuff"
+		  }
+		]
+	  },
+	  
+	  {
+		"id": "2",
+		"title":"Titrator",
+		"sku": "Item 1",
+		"thumb": "100x100",
+		"pages": [
+		 {
+			"id": "360",
+			"content":"stuff"
+		  },
+		 {
+			"id": "Feature",
+			"content":"Feature stuff"
+		  },
+		 {
+			"id": "Data",
+			"content":"Data stuff"
+		  }
+		]
+	  }
+	  
+	],
 
         findById = function (id) {
             var product = null,

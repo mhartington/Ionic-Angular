@@ -1,24 +1,20 @@
 <nav-page>
 
-		<header-bar type="bar-positive" align-title="center">
-		</header-bar>
+	<header-bar type="bar-positive" align-title="center">
+	</header-bar>
 
-		<content has-header="true">
-			<list class="scroll">
+	<content has-header="true">
+		<list class="scroll">
 
-				<a ng-repeat="product in products" class="item item-thumbnail-left" ng-click="go('/products/' + product.id)">
-					<img ng-src="http://placehold.it/{{product.thumb}}">
-					<h2>{{product.sku}}</h2>
+			<a ng-repeat="product in products" class="item item-thumbnail-left" ng-click="go('/products/' + product.id)">
+				<img ng-src="http://placehold.it/{{product.thumb}}">
+				<h2>{{product.sku}}</h2>
 
-					<p>{{product.title}}</p>
-				<ul ng-repeat="page in product.pages">
-						<li>{{page.id}}</li>
-						<li>{{page.content}}</li>
-					</ul>
-				</a>
+				<p>{{product.title}}</p>
+			</a>
 
-			</list>
-		</content>
+		</list>
+	</content>
 
 
 
