@@ -2,27 +2,27 @@
 
 (function () {
 
-   var products ={
-  "Item1": {
+   var products =[
+   {
     "id": "1",
     "sku": "Item 1",
     "thumb": "100x100",
-    "pages": {
-     "360": {
+    "pages": [
+     {
         "id": "360",
         "content":"stuff"
       },
-      "Feature":{
+     {
         "id": "Feature",
         "content":"Feature stuff"
       },
-      "Data":{
+     {
         "id": "Data",
         "content":"Data stuff"
       }
-    }
+    ]
   }
-},
+],
 
         findById = function (id) {
             var product = null,
