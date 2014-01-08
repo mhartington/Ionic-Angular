@@ -1,5 +1,6 @@
 <nav-page>
 	<side-menus>
+		<fade-bar></fade-bar>
 		<pane side-menu-content>
 
 			<header-bar left-buttons="leftButtons" type="bar-positive" align-title="center" title="employee.sku">
@@ -12,7 +13,7 @@
 					<content padding="true" has-header="true" has-footer="true" scroll="false">
 						<div class="wrapper">
 							<div class="product">
-								<img ng-repeat="img in page.imgs" class="child" ng-src="../pic/{{employee.sku}}/{{page.imgs}}.png" />
+								<img ng-repeat="img in page.imgs" class="child fade-in-not-out" ng-src="../pic/{{employee.sku}}/{{page.imgs}}.png" />
 							</div>
 							
 							<div class="info">{{page.id}}</div>

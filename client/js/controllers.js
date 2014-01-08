@@ -35,11 +35,27 @@ angular.module('myApp.controllers', [])
 ]
 			
 			
-			
     }])
+.directive('fadeBar', function($timeout) {
+		return {
+			restrict: 'E',
+			template: '<div class="fade-bar"></div>',
+			replace: true,
+			link: function($scope, $element, $attr) {
+				$timeout(function() {
+					$scope.$watch('sideMenuController.getOpenRatio()', function(ratio) {
+						$element[0].style.opacity = Math.abs(ratio);
+					});
+				});
+			}
+		}
+	})
+
+
 	.controller('ReportListCtrl', ['$scope', '$routeParams', 'Report',
 		function ($scope, $routeParams, Report) {
 			$scope.employees = Report.query({
 				employeeId: $routeParams.employeeId
 			});
     }]);
+
