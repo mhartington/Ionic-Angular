@@ -1,8 +1,8 @@
 /*!
- * Copyright 2013 Drifty Co.
+ * Copyright 2014 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v0.9.17
+ * Ionic, v0.9.20
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -16,7 +16,7 @@
 window.ionic = {
   controllers: {},
   views: {},
-  version: '0.9.17'
+  version: '0.9.20'
 };;
 (function(ionic) {
 
@@ -199,6 +199,12 @@ window.ionic = {
         e = e.parentNode;
       }
       return null;
+    },
+
+    rectContains: function(x, y, x1, y1, x2, y2) {
+      if(x < x1 || x > x2) return false;
+      if(y < y1 || y > y2) return false;
+      return true;
     }
   };
 })(window.ionic);
@@ -1731,25 +1737,34 @@ window.ionic = {
 (function(ionic) {
 
   ionic.Platform = {
+
     detect: function() {
-      var platforms = [];
+      
+      var domReady = function() {
+        // run when the DOM is ready
+        document.addEventListener("deviceready", deviceReady, false);
+        document.removeEventListener("DOMContentLoaded", domReady, false);
+      };
+      document.addEventListener("DOMContentLoaded", domReady, false);
 
-      this._checkPlatforms(platforms);
+      var deviceReady = function() {
+        // run when cordova is fully loaded
+        var platforms = [];
+        ionic.Platform._checkPlatforms(platforms);
 
-      var classify = function() {
-        if(!document.body) { return; }
-
-        for(var i = 0; i < platforms.length; i++) {
-          document.body.classList.add('platform-' + platforms[i]);
+        if(platforms.length) {
+          // only change the body class if we got platform info
+          var bodyClass = document.body.className;
+          for(var i = 0; i < platforms.length; i++) {
+            bodyClass += ' platform-' + platforms[i];
+          }
+          document.body.className = bodyClass;
         }
+        document.removeEventListener("deviceready", deviceReady, false);
       };
 
-      document.addEventListener( "DOMContentLoaded", function(){
-        classify();
-      });
-
-      classify();
     },
+
     _checkPlatforms: function(platforms) {
       if(this.isCordova()) {
         platforms.push('cordova');
@@ -1763,14 +1778,15 @@ window.ionic = {
       if(this.isAndroid()) {
         platforms.push('android');
       }
+
+      // Return whether we detected anything
+      return (platforms.length > 0);
     },
 
     // Check if we are running in Cordova, which will have
     // window.device available.
     isCordova: function() {
       return (window.cordova || window.PhoneGap || window.phonegap);
-      //&& /^file:\/{3}[^\/]/i.test(window.location.href) 
-      //&& /ios|iphone|ipod|ipad|android/i.test(navigator.userAgent);
     },
     isIPad: function() {
       return navigator.userAgent.toLowerCase().indexOf('ipad') >= 0;
@@ -1779,13 +1795,23 @@ window.ionic = {
       if(!window.device) {
         return false;
       }
-      return parseFloat(window.device.version) >= 7.0;
+      return window.device.platform == 'iOS' && parseFloat(window.device.version) >= 7.0;
     },
     isAndroid: function() {
       if(!window.device) {
         return navigator.userAgent.toLowerCase().indexOf('android') >= 0;
       }
-      return device.platform === "Android";
+      return window.device.platform === "Android";
+    },
+
+    // Check if the platform is the one detected by cordova
+    is: function(type) {
+      if(window.device && window.device.platform) {
+        return window.device.platform === type || window.device.platform.toLowerCase() === type;
+      }
+
+      // A quick hack for 
+      return navigator.userAgent.toLowerCase().indexOf(type.toLowerCase()) >= 0;
     }
   };
 
@@ -2366,6 +2392,9 @@ ionic.views.Scroll = ionic.views.View.inherit({
       scrollingY: true,
       scrollbarY: true,
 
+      startX: 0,
+      startY: 0,
+
       /** The minimum size the scrollbars scale to while scrolling */
       minScrollbarSizeX: 5,
       minScrollbarSizeY: 5,
@@ -2444,6 +2473,9 @@ ionic.views.Scroll = ionic.views.View.inherit({
         target: self.__container
       });
     };
+
+    this.__scrollLeft = this.options.startX;
+    this.__scrollTop = this.options.startY;
 
     // Get the render update function, initialize event handlers,
     // and calculate the size of the scroll container
@@ -4719,7 +4751,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
 
         var width = Math.min(_this.maxWidth, Math.max(window.outerWidth - 40, lb.offsetWidth));
 
-        lb.style.width = width;
+        lb.style.width = width + 'px';
 
         lb.style.marginLeft = (-lb.offsetWidth) / 2 + 'px';
         lb.style.marginTop = (-lb.offsetHeight) / 2 + 'px';
@@ -5231,6 +5263,7 @@ ionic.views.Slider = ionic.views.View.inherit({
         } else {
           element.addEventListener('mousemove', this, false);
           element.addEventListener('mouseup', this, false);
+          document.addEventListener('mouseup', this, false);
         }
       },
       move: function(event) {
@@ -5374,6 +5407,7 @@ ionic.views.Slider = ionic.views.View.inherit({
         } else {
           element.removeEventListener('mousemove', events, false)
           element.removeEventListener('mouseup', events, false)
+          document.removeEventListener('mouseup', events, false);
         }
 
       },

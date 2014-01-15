@@ -1,25 +1,43 @@
-'use strict';
+// Ionic Starter App, v0.9.20
 
-angular.module('myApp', [
-	'ionic',
-    'ngTouch',
-    'ngRoute',
-    'ngAnimate',
-    'myApp.controllers',
-    'myApp.memoryServices'
-]).
-config(['$routeProvider', function ($routeProvider) {
+// angular.module is a global place for creating, registering and retrieving Angular modules
+// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
+// the 2nd parameter is an array of 'requires'
+// 'starter.services' is found in services.js
+// 'starter.controllers' is found in controllers.js
+angular.module('starter', [
+    'ionic', 
+    'starter.services',
+    'starter.controllers'
+])
+
+
+.config(function ($stateProvider, $urlRouterProvider) {
+
+    // Ionic uses AngularUI Router which uses the concept of states
+    // Learn more here: https://github.com/angular-ui/ui-router
+    // Set up the various states which the app can be in.
+    // Each state's controller can be found in controllers.js 
+    $stateProvider.state('home', {
+        url: "/",
+        templateUrl: "templates/list.html",
+        controller: 'PetIndexCtrl'
+    });
+
+    $stateProvider.state('detail', {
+        url: "/pet/:petsId",
+        templateUrl: "templates/detail.html",
+        controller: 'PetDetailCtrl'
+    });
+    
+    
+    
+    
    
-    $routeProvider.when('/products', {
-		templateUrl: 'partials/product-list.html', 
-		controller: 'ProductListCtrl'
-		});
-   
-    $routeProvider.when('/products/:productId', {
-		templateUrl: 'partials/product-detail.html',
-		controller: 'ProductDetailCtrl'
-		});
-   
-   
-    $routeProvider.otherwise({redirectTo: '/products'});
-}]);
+    
+    
+
+    // if none of the above states are matched, use this as the fallback
+    $urlRouterProvider.otherwise('/');
+
+});

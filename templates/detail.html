@@ -1,0 +1,38 @@
+<view title="detail">
+    <side-menus>
+
+        <fade-bar></fade-bar>
+        <!-- Center content -->
+
+        <pane side-menu-content>
+            <!-- The nav bar that will be updated as we navigate -->
+            <header-bar title="headerTitle" left-buttons="leftButtons" right-buttons="rightButtons" type="bar-positive" align-title="center">
+            </header-bar>
+            <content has-header="true" padding="true">
+                <p>{{pet.id}}</p>
+                <p>{{pet.title}}</p>
+                <p>{{ pet.description }}</p>
+                <p>
+                    <a class="button icon ion-arrow-left-a" href="#/">All Pets</a>
+                </p>
+            </content>
+
+        </pane>
+
+        <!-- Left menu -->
+        <side-menu side="left" ng-controller="PetIndexCtrl">
+           <header-bar type="bar-dark">
+            </header-bar>
+          <content has-header="true">
+        <list>
+            <item href="#/">Home</item>
+            <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
+                <h3>{{pet.title}}</h3>
+                <p>{{pet.description}}</p>
+            </item>
+        </list>
+    </content>
+        </side-menu>
+
+    </side-menus>
+</view>

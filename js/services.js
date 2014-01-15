@@ -1,78 +1,42 @@
-'use strict';
+angular.module('starter.services', [])
 
-(function () {
+/**
+ * A simple example service that returns some data.
+ */
+.factory('PetService', function () {
+    // Might use a resource here that returns a JSON array
 
-	   var products =[
-	   {
-		"id": "1",
-		"title":"Titrator",
-		"sku": "Item 1",
-		"thumb": "100x100",
-		"pages": [
-		 {
-			"id": "360",
-			"content":"stuff"
-		  },
-		 {
-			"id": "Feature",
-			"content":"Feature stuff"
-		  },
-		 {
-			"id": "Data",
-			"content":"Data stuff"
-		  }
-		]
-	  },
-	  
-	  {
-		"id": "2",
-		"title":"Titrator",
-		"sku": "Item 1",
-		"thumb": "100x100",
-		"pages": [
-		 {
-			"id": "360",
-			"content":"stuff"
-		  },
-		 {
-			"id": "Feature",
-			"content":"Feature stuff"
-		  },
-		 {
-			"id": "Data",
-			"content":"Data stuff"
-		  }
-		]
-	  }
-	  
-	],
-
-        findById = function (id) {
-            var product = null,
-                l = products.length,
-                i;
-            for (i = 0; i < l; i = i + 1) {
-                if (products[i].id === id) {
-                    product = products[i];
-                    break;
-                }
-            }
-            return product;
+    // Some fake testing data
+    var pets = [
+        {
+            id: 0,
+            title: 'Cats',
+            description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.'
+        },
+        {
+            id: 1,
+            title: 'Dogs',
+            description: 'Lovable. Loyal almost to a fault. Smarter than they let on.'
+        },
+        {
+            id: 2,
+            title: 'Turtles',
+            description: 'Everyone likes turtles.'
+        },
+        {
+            id: 3,
+            title: 'Sharks',
+            description: 'An advanced pet. Needs millions of gallons of salt water. Will happily eat you.'
         }
+  ];
 
-
-    angular.module('myApp.memoryServices', [])
-        .factory('Product', [
-            function () {
-                return {
-                    query: function () {
-                        return products;
-                    },
-                    get: function (product) {
-                        return findById(parseInt(product.productId));
-                    }
-                }
-
-            }]);
-
-}());
+    return {
+        all: function () {
+            return pets;
+        },
+        get: function (petId) {
+            // Simple index lookup
+            return pets[petId];
+        }
+    }
+});

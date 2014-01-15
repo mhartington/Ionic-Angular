@@ -1,39 +1,37 @@
-'use strict';
-
-angular.module('myApp.controllers', ['ionic'])
-	.controller('MainCtrl', ['$scope', '$rootScope', '$window', '$location',
-		function ($scope, $rootScope, $window, $location) {
-			$scope.slide = '';
-			$rootScope.back = function () {
-				$scope.slide = 'slide-right';
-				$window.history.back();
-			}
+angular.module('starter.controllers', [])
 
 
-			$rootScope.go = function (path) {
-				$scope.slide = 'slide-left';
-				$location.url(path);
-			}
-    }])
-
-.controller('ProductListCtrl', ['$scope', 'Product',
-	function ($scope, Product) {
-		$scope.products = Product.query();
-	}])
+// A simple controller that fetches a list of data from a service
+.controller('PetIndexCtrl', function ($scope, PetService) {
+    // "Pets" is a service returning mock data (services.js)
+    $scope.pets = PetService.all();
+    $scope.enableBackButton = false;
+})
 
 
-.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Product',
-	function ($scope, $routeParams, Product) {
-		$scope.product = Product.get({
-			productId: $routeParams.productId
-		});
-		$scope.leftButtons = [
-			{
-				type: 'button-clear',
-				content: '<i class="icon ion-navicon-round"></i>',
-				tap: function (e) {
-					$scope.sideMenuController.toggleLeft();
-				}
-  }
-]
-	}])
+
+// A simple controller that shows a tapped item's data
+.controller('PetDetailCtrl', function ($scope, $stateParams, PetService) {
+    // "Pets" is a service returning mock data (services.js)
+    $scope.pet = PetService.get($stateParams.petsId);
+    $scope.enableBackButton = false;
+})
+
+
+.directive('fadeBar', function ($timeout) {
+    return {
+        restrict: 'E',
+        template: '<div class="fade-bar"></div>',
+        replace: true,
+        link: function ($scope, $element, $attr) {
+            // Run in the next scope digest
+            $timeout(function () {
+                // Watch for changes to the openRatio which is a value between 0 and 1 that says how "open" the side menu is
+                $scope.$watch('sideMenuController.getOpenRatio()', function (ratio) {
+                    // Set the transparency of the fade bar
+                    $element[0].style.opacity = Math.abs(ratio);
+                });
+            });
+        }
+    }
+});
