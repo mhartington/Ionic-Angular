@@ -9,24 +9,80 @@ angular.module('starter.services', [])
     // Some fake testing data
     var pets = [
         {
-            id: 0,
-            title: 'Cats',
-            description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.'
+            "id": "0",
+            "title": "Cats",
+            "description": "Furry little creatures. Obsessed with plotting assassination, but never following through on it.",
+            "pages": {
+                "360": {
+                    "id": "360",
+                    "content": "stuff"
+                },
+                "Feature": {
+                    "id": "Feature",
+                    "content": "Feature stuff"
+                },
+                "Data": {
+                    "id": "Data",
+                    "content": "Data stuff"
+                }
+            }
         },
         {
-            id: 1,
-            title: 'Dogs',
-            description: 'Lovable. Loyal almost to a fault. Smarter than they let on.'
+            "id": "1",
+            "title": "Dogs",
+            "description": "Lovable. Loyal almost to a fault. Smarter than they let on.",
+            "pages": {
+                "360": {
+                    "id": "360",
+                    "content": "stuff"
+                },
+                "Feature": {
+                    "id": "Feature",
+                    "content": "Feature stuff"
+                },
+                "Data": {
+                    "id": "Data",
+                    "content": "Data stuff"
+                }
+            }
         },
         {
-            id: 2,
-            title: 'Turtles',
-            description: 'Everyone likes turtles.'
+            "id": "2",
+            "title": "Turtles",
+            "description": "Everyone likes turtles.",
+            "pages": {
+                "360": {
+                    "id": "360",
+                    "content": "stuff"
+                },
+                "Feature": {
+                    "id": "Feature",
+                    "content": "Feature stuff"
+                },
+                "Data": {
+                    "id": "Data",
+                    "content": "Data stuff"
+                }
+            }
         },
         {
-            id: 3,
-            title: 'Sharks',
-            description: 'An advanced pet. Needs millions of gallons of salt water. Will happily eat you.'
+            "id": "3",
+            "title": "Sharks",
+            "description": "An advanced pet. Needs millions of gallons of salt water. Will happily eat you.",
+            "pages": {
+                "360": {
+                    "id": "360",
+                    "content": "stuff"
+                },
+                "Feature": {
+                    "id": "Feature",
+                    "content": "Feature stuff"
+                },
+                "Data": {
+                    "id": "Data",
+                    "content": "Data stuff"
+                }
+            }
         }
   ];
 
@@ -38,5 +94,5 @@ angular.module('starter.services', [])
             // Simple index lookup
             return pets[petId];
         }
-    }
+    };
 });

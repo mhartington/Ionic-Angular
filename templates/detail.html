@@ -5,30 +5,55 @@
         <!-- Center content -->
 
         <pane side-menu-content>
-            <!-- The nav bar that will be updated as we navigate -->
-            <header-bar title="headerTitle" type="bar-positive">
-            </header-bar>
-            <content has-header="true" padding="true">
-                <p>{{pet.id}}</p>
-                <p>{{pet.title}}</p>
-                <p>{{ pet.description }}</p>
-            </content>
+
+            <tabs tabs-type="tabs-icon-top" tabs-style="tabs-primary">
+
+
+
+
+
+                <tab title="{{page.id}}" icon-on="icon ion-ios7-filing" icon-off="icon ion-ios7-filing-outline" ng-repeat="page in pet.pages">
+                    <header-bar title="pet.title" type="bar-positive">
+                    </header-bar>
+                    <content has-header="true" padding="true">
+                        <p>{{pet.id}}</p>
+                        <p>{{pet.title}}</p>
+                        <p>{{ pet.description }}</p>
+
+                        <p>{{page.id}}</p>
+                    </content>
+
+                </tab>
+
+
+
+
+
+
+            </tabs>
 
         </pane>
 
+
+
+
+
+
+
+
         <!-- Left menu -->
         <side-menu side="left" ng-controller="PetIndexCtrl">
-           <header-bar type="bar-dark">
+            <header-bar title="headerTitle" type="bar-dark">
             </header-bar>
-          <content has-header="true">
-        <list>
-            <item href="#/">Home</item>
-            <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
-                <h3>{{pet.title}}</h3>
-                <p>{{pet.description}}</p>
-            </item>
-        </list>
-    </content>
+            <content has-header="true">
+                <list>
+                    <item href="#/">Home</item>
+                    <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
+                        <h3>{{pet.title}}</h3>
+                        <p>{{pet.description}}</p>
+                    </item>
+                </list>
+            </content>
         </side-menu>
 
     </side-menus>
