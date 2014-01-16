@@ -15,12 +15,26 @@
                 <tab title="{{page.id}}" icon-on="icon ion-ios7-filing" icon-off="icon ion-ios7-filing-outline" ng-repeat="page in pet.pages">
                     <header-bar title="pet.title" type="bar-positive">
                     </header-bar>
-                    <content has-header="true" padding="true">
+                    <content has-header="true" padding="true" scroll="false">
+<!--
                         <p>{{pet.id}}</p>
                         <p>{{pet.title}}</p>
                         <p>{{ pet.description }}</p>
 
                         <p>{{page.id}}</p>
+-->
+                    
+                    
+                    <div class="wrapper">
+							<image-Rotator>
+							    
+							</image-Rotator>
+							
+							<div class="info">{{page.id}}</div>
+							
+						</div>
+                    
+                    
                     </content>
 
                 </tab>

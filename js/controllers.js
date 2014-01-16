@@ -33,5 +33,17 @@ angular.module('starter.controllers', [])
                 });
             });
         }
-    }
+    };
+})
+
+
+.directive('imageRotator', function () {
+    return {
+        restrict: 'E',
+        template: '<div class="product"><img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png"></div>',
+
+        link: function ($element, $attr) {
+            $(element).j360({});
+        }
+    };
 });

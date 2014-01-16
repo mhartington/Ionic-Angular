@@ -12,9 +12,11 @@ angular.module('starter.services', [])
             "id": "0",
             "title": "Cats",
             "description": "Furry little creatures. Obsessed with plotting assassination, but never following through on it.",
+            "sku":"HI904",
             "pages": {
                 "360": {
                     "id": "360",
+                    "imgs":['01','02','03', '04', '05','06'],
                     "content": "stuff"
                 },
                 "Feature": {
