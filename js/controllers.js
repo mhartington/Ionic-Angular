@@ -37,13 +37,17 @@ angular.module('starter.controllers', [])
 })
 
 
-.directive('imageRotator', function () {
+.directive('imageRotator', function ($timeout) {
     return {
-        restrict: 'E',
-        template: '<div class="product"><img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png"></div>',
+        restrict: 'A',
+        link: function ($scope, $element, $attr) {
+            console.log('Before Function');
+            $timeout(function() {
+              $element.j360();
+            });
+            
+            console.log('After Function');
 
-        link: function ($element, $attr) {
-            $(element).j360({});
         }
     };
 });

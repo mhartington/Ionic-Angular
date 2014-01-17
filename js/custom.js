@@ -5,19 +5,21 @@
             $imgs = $product.find('img'),
             imageTotal = $imgs.length - 1,
             clicked = false,
-            widthStep = 4,
+            widthStep = 15,
             currPos,
             currImg = 0,
             lastImg = 0;
 
+
         $imgs.bind('mousedown', function (e) {
             e.preventDefault(); // prevent dragging images
-        });
+        })
 
-        $imgs.filter(':gt(0)').addClass('notseen');
+        .filter(':gt(0)').addClass('notseen');
 
 
-        $product.bind('mousedown touchstart', function (e) {
+        $imgs.bind('mousedown touchstart', function (e) {
+            console.log('MouseDown');
             if (e.type === "touchstart") {
                 currPos = window.event.touches[0].pageX;
             } else {
@@ -25,15 +27,16 @@
             }
             clicked = true;
             return false;
-        });
 
+        })
 
-        $(document).bind('mouseup touchend', function () {
+        .bind('mouseup touchend', function () {
             clicked = false;
-        });
+            console.log('MouseUp');
+        })
 
-
-        $(document).bind('mousemove touchmove', function (e) {
+        .bind('mousemove touchmove', function (e) {
+            console.log('MouseMove');
             if (clicked) {
                 var pageX;
                 if (e.type == "touchmove") {
@@ -41,7 +44,7 @@
                 } else {
                     pageX = e.pageX;
                 }
-                widthStep = 4;
+                widthStep = 15;
                 if (Math.abs(currPos - pageX) >= widthStep) {
                     if (currPos - pageX >= widthStep) {
                         currImg++;

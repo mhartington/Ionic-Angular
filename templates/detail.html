@@ -15,7 +15,7 @@
                 <tab title="{{page.id}}" icon-on="icon ion-ios7-filing" icon-off="icon ion-ios7-filing-outline" ng-repeat="page in pet.pages">
                     <header-bar title="pet.title" type="bar-positive">
                     </header-bar>
-                    <content has-header="true" padding="true" scroll="false">
+                    <content has-header="true" scroll="false" has-tabs="true">
 <!--
                         <p>{{pet.id}}</p>
                         <p>{{pet.title}}</p>
@@ -25,10 +25,11 @@
 -->
                     
                     
-                    <div class="wrapper">
-							<image-Rotator>
+                    <div class="wrapper has-footer">
+							<div class="product" image-Rotator>
+							    <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
 							    
-							</image-Rotator>
+							</div>
 							
 							<div class="info">{{page.id}}</div>
 							
@@ -38,9 +39,6 @@
                     </content>
 
                 </tab>
-
-
-
 
 
 
