@@ -1,0 +1,69 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.eot");
+  src: url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.woff") format("woff"),
+       url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.ttf") format("truetype"),
+       url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-360:before,
+.icon-360-outline:before,
+.icon-button:before,
+.icon-button-outline:before,
+.icon-data:before,
+.icon-data-outline:before,
+.icon-feature:before,
+.icon-feature-outline:before,
+.icon-io:before,
+.icon-io-outline:before,
+.icon-kit:before,
+.icon-kit-outline:before,
+.icon-probe:before,
+.icon-probe-outline:before,
+.icon-video:before,
+.icon-video-outline:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-360:before { content: "\f110"; }
+.icon-360-outline:before { content: "\f111"; }
+.icon-button:before { content: "\f112"; }
+.icon-button-outline:before { content: "\f113"; }
+.icon-data:before { content: "\f114"; }
+.icon-data-outline:before { content: "\f115"; }
+.icon-feature:before { content: "\f116"; }
+.icon-feature-outline:before { content: "\f117"; }
+.icon-io:before { content: "\f118"; }
+.icon-io-outline:before { content: "\f119"; }
+.icon-kit:before { content: "\f11a"; }
+.icon-kit-outline:before { content: "\f11b"; }
+.icon-probe:before { content: "\f11c"; }
+.icon-probe-outline:before { content: "\f11d"; }
+.icon-video:before { content: "\f11e"; }
+.icon-video-outline:before { content: "\f11f"; }

@@ -14,7 +14,17 @@ angular.module('starter.controllers', [])
 .controller('PetDetailCtrl', function ($scope, $stateParams, PetService) {
     // "Pets" is a service returning mock data (services.js)
     $scope.pet = PetService.get($stateParams.petsId);
-    $scope.enableBackButton = false;
+
+
+    $scope.leftButtons = [
+        {
+            type: 'button-clear',
+            content: '<i class="icon ion-navicon-round"></i>',
+            tap: function (e) {
+                $scope.sideMenuController.toggleLeft();
+            }
+  }
+];
 })
 
 
@@ -41,12 +51,12 @@ angular.module('starter.controllers', [])
     return {
         restrict: 'A',
         link: function ($scope, $element, $attr) {
-            console.log('Before Function');
-            $timeout(function() {
-              $element.j360();
+
+            $timeout(function () {
+                $element.j360();
             });
-            
-            console.log('After Function');
+
+
 
         }
     };

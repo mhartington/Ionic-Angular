@@ -12,18 +12,21 @@ angular.module('starter.services', [])
             "id": "0",
             "title": "Cats",
             "description": "Furry little creatures. Obsessed with plotting assassination, but never following through on it.",
-            "sku":"HI904",
+            "sku": "HI904",
             "pages": {
                 "360": {
+                    "type": "normal",
                     "id": "360",
-                    "imgs":['01','02','03', '04', '05','06','08','09','10','11','12','13','14','15','16','17'],
+                    "imgs": ['01', '02', '03', '04', '05', '06', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17'],
                     "content": "stuff"
                 },
                 "Feature": {
+                    "type": "slide",
                     "id": "Feature",
                     "content": "Feature stuff"
                 },
                 "Data": {
+                    "type": "normal",
                     "id": "Data",
                     "content": "Data stuff"
                 }
