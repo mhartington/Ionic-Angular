@@ -1,53 +1,43 @@
 <view title="detail">
     <side-menus>
-
         <fade-bar></fade-bar>
         <!-- Center content -->
 
         <pane side-menu-content>
-            <header-bar title="pet.title" type="bar-positive" left-buttons="leftButtons">
+            <header-bar title="pet.sku" type="bar-positive" left-buttons="leftButtons">
             </header-bar>
-            <tabs tabs-type="tabs-icon-top" tabs-style="tabs-primary">
+            <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
 
 
 
 
 
-                <tab title="{{page.id}}" icon-on="icon icon-360" icon-off="icon icon-360-outline" ng-repeat="page in pet.pages">
+                <tab title="{{page.id}}" icon-on="icon icon-360" icon-off="icon icon-360" ng-repeat="page in pet.pages | orderBy:orderProp">
 
+                <!--IF CONTENT TYPE IS SLIDE-->
+                    <slide-box ng-if="page.type === 'slide'">
+                        <slide ng-repeat="slide in page.slides">
+                            <div class="wrapper has-tabs has-header">
+                                <div class="product">
+                                    <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
+                                </div>
 
+                                <div class="info">{{slide.content}}</div>
 
+                            </div>
+                        </slide>
 
-
-                    <div ng-if="page.type === 'normal'" class="wrapper has-footer box blue">
+                    </slide-box>
+                <!--IF CONTENT TYPE IS NORMAL-->
+                    <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
                         <div class="product" image-Rotator>
                             <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
 
                         </div>
 
-                        <div class="info">{{page.id}}</div>
+                        <div class="info">{{page.content}}</div>
 
                     </div>
-
-
-                    <slide-box ng-if="page.type === 'slide'">
-                        <slide>
-                            <div class="wrapper has-footer box blue">
-                                <div class="product" image-Rotator>
-                                    <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
-
-                                </div>
-
-                                <div class="info">{{page.id}}</div>
-
-                            </div>
-                        </slide>
-                        <slide></slide>
-
-                    </slide-box>
-
-
-
 
 
                 </tab>
@@ -62,18 +52,21 @@
 
         <!-- Left menu -->
         <side-menu side="left" ng-controller="PetIndexCtrl">
-            <header-bar title="'Menu'" type="bar-dark">
-            </header-bar>
+            <div class="bar bar-header bar-dark">
+                <div class="button-bar">
+                <a class="button button-clear" href="#/">Home</a>    
+                </div>
+            </div>
+
+
             <content has-header="true">
                 <list>
-                    <item href="#/">Home</item>
                     <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
-                        <h3>{{pet.title}}</h3>
-                        <p>{{pet.description}}</p>
+                        <h3>{{pet.sku}}</h3>
+                        <p>{{pet.title}}</p>
                     </item>
                 </list>
             </content>
         </side-menu>
-
     </side-menus>
 </view>

@@ -2,14 +2,14 @@
 
     <header-bar title="pet.title" left-buttons="leftButtons" right-buttons="rightButtons" type="bar-positive" align-title="center">
     </header-bar>
-    <content has-header="true" padding="true" style="padding: 0 5%;">
+    <content has-header="true" padding="true" style="padding: 0 5%; border-radius:15px;">
         
         <img src="img/logo.svg" style="width:90%;max-width:300px; display:block; margin:auto">
         
         <list>
             <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
-                <h3>{{pet.title}}</h3>
-                <p>{{pet.description}}</p>
+                <h3>{{pet.sku}}</h3>
+                <p>{{pet.title}}</p>
             </item>
         </list>
     </content>

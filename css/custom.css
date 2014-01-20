@@ -40,14 +40,17 @@
 .notseen {
     display: none !important;
 }
-/*
 .wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
 }
-*/
+.info {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    text-align: justify;
+}
 /* PORTRAIT */
 
 @media screen and (orientation: portrait) {
@@ -60,7 +63,8 @@
     }
     .info {
         height: 35%;
-        width: 90%;
+        width: 100%;
+        padding: 0 10px;
         margin: auto;
         display: -webkit-box;
         /* OLD - iOS 6-, Safari 3.1-6 */
@@ -176,4 +180,12 @@
     text-align: left;
     list-style: decimal;
     margin: 10px 0px;
+}
+.slider-pager {
+    top: 45px;
+    bottom: initial;
+}
+.platform-ios .slider-pager {
+    top: 65px;
+    bottom: initial;
 }

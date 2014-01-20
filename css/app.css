@@ -2654,16 +2654,16 @@ body,
     height: 100%
 }
 .has-header {
-    top: 44px
+    top: 44px;
 }
 .has-subheader {
-    top: 88px
+    top: 88px;
 }
 .has-footer {
-    bottom: 44px
+    bottom: 44px;
 }
 .has-tabs {
-    bottom: 49px
+    bottom: 49px !important;
 }
 .pane {
     position: fixed;
@@ -6866,13 +6866,13 @@ a.dark {
 .platform-android .title {
     line-height: 48px
 }
-.fade-bar {
+.platform-ios .fade-bar {
     height: 20px;
     width: 100%;
     position: fixed;
     z-index: 9999;
     opacity: 0;
     background-color: #000;
-    position:absolute;
-    top:0px;
+    position: absolute;
+    top: 0px;
 }

@@ -15,7 +15,7 @@ angular.module('starter.controllers', [])
     // "Pets" is a service returning mock data (services.js)
     $scope.pet = PetService.get($stateParams.petsId);
 
-
+    
     $scope.leftButtons = [
         {
             type: 'button-clear',
@@ -53,7 +53,7 @@ angular.module('starter.controllers', [])
         link: function ($scope, $element, $attr) {
 
             $timeout(function () {
-                $element.j360();
+                $element.j360()
             });
 
 
