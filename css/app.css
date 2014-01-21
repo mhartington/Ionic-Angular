@@ -6866,7 +6866,7 @@ a.dark {
 .platform-android .title {
     line-height: 48px
 }
-.platform-ios .fade-bar {
+.platform-ios7 .fade-bar {
     height: 20px;
     width: 100%;
     position: fixed;

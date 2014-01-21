@@ -24,7 +24,18 @@ angular.module('starter.controllers', [])
                 $scope.sideMenuController.toggleLeft();
             }
   }
-];
+]
+
+
+   $scope.rightButtons = [
+        {
+            type: 'button-clear',
+            content: '<i class="icon ion-forward"></i>',
+            tap: function (e) {
+               window.open($scope.petManual, '_blank');
+            }
+  }
+]
 })
 
 

@@ -11,6 +11,7 @@ angular.module('starter.services', [])
             "id": "0",
             "sku": "HI902",
             "title": "Automatic Titrator",
+			"manual":"http://www.hannainst.com/manuals/manHI_901_902.pdf",
             "pages": {
                 "360": {
                     "type": "normal",
