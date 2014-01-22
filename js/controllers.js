@@ -30,13 +30,19 @@ angular.module('starter.controllers', [])
    $scope.rightButtons = [
         {
             type: 'button-clear',
-            content: '<i class="icon ion-forward"></i>',
+            content: '<i class="icon ion-ios7-upload"></i>',
             tap: function (e) {
-               window.open($scope.petManual, '_blank');
+				var url = $scope.pet;
+				
+               window.open(url.manual, '_blank');
             }
   }
 ]
+
+
 })
+
+
 
 
 .directive('fadeBar', function ($timeout) {

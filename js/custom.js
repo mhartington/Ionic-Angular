@@ -10,7 +10,7 @@
             currImg = 0,
             lastImg = 0;
 
-
+	 if ($imgs.length > 1){ 
         $imgs.bind('mousedown', function (e) {
             e.preventDefault(); // prevent dragging images
         })
@@ -66,7 +66,7 @@
             }
         });
 
-
+	 };
     };
 
 })(jQuery, window, document);

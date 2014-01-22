@@ -1,72 +1,64 @@
 <view title="detail">
-    <side-menus>
-        <fade-bar></fade-bar>
-        <!-- Center content -->
-
-        <pane side-menu-content>
-            <header-bar title="pet.sku" type="bar-positive" left-buttons="leftButtons" right-buttons="rightButtons">
-            </header-bar>
-            <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
-
-
-
-
-
-                <tab title="{{page.id}}" icon-on="icon icon-360" icon-off="icon icon-360" ng-repeat="page in pet.pages | orderBy:orderProp">
-
-                <!--IF CONTENT TYPE IS SLIDE-->
-                    <slide-box ng-if="page.type === 'slide'">
-                        <slide ng-repeat="slide in page.slides">
-                            <div class="wrapper has-tabs has-header">
-                                <div class="product">
-                                    <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
-                                </div>
-
-                                <div class="info">{{slide.content}}</div>
-
-                            </div>
-                        </slide>
-
-                    </slide-box>
-                <!--IF CONTENT TYPE IS NORMAL-->
-                    <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
-                        <div class="product" image-Rotator>
-                            <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
-
-                        </div>
-
-                        <div class="info">{{page.content}}</div>
-
-                    </div>
-
-
-                </tab>
-
-
-
-            </tabs>
-
+  <side-menus>
+    <fade-bar></fade-bar>
+    <!-- Center content -->
+    
+    <pane side-menu-content>
+      <header-bar title="pet.sku" type="bar-positive" left-buttons="leftButtons" right-buttons="rightButtons"></header-bar>
+      <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light"><tab title="{{page.id}}" icon-on="{{page.icon}}" icon-off="{{page.icon}}" ng-repeat="page in pet.pages">
+        
+        <!--IF CONTENT TYPE IS SLIDE-->
+        
+        <slide-box ng-if="page.type === 'slide'">
+          <slide ng-repeat="slide in page.slides">
+            <div class="wrapper has-tabs has-header">
+              <div class="product"> <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png"> </div>
+              <div class="info">{{slide.content}}</div>
+            </div>
+          </slide>
+        </slide-box>
+        
+        <!--IF CONTENT TYPE IS NORMAL-->
+        <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
+          <div class="product" image-Rotator> <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png"> </div>
+          <div class="info">{{page.content}}</div>
+        </div>
+        
+        <!--IF CONTENT TYPE IS Video-->
+        <div ng-if="page.type === 'video'" class="wrapper has-tabs has-header">
+          <div class="video">
+            <h4>{{pet.sku}}</h4>
+            <a href="{{pet.src}}">{{pet.src}}</a>
+            <video controls poster="img/poster.png" src="{{pet.src}}" type="video/mp4"/>
+            <a href="{{pet.src}}">{{pet.src}}</a>
+            </video>
+          </div>
+        </div>
+        </tab>
+        </tabs>
         </pane>
-
-
-
+        
         <!-- Left menu -->
         <side-menu side="left" ng-controller="PetIndexCtrl">
-            <div class="bar bar-header bar-dark">
-                <div class="button-bar">
-                <a class="button button-clear" href="#/">Home</a>    
-                </div>
-            </div>
-
-
-            <content has-header="true">
-                <list>
-                    <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
-                        <h3>{{pet.sku}}</h3>
-                        <p>{{pet.title}}</p>
-                    </item>
-                </list>
-            </content>
+          <div class="bar bar-header bar-dark item-input-inset">
+          
+            <label class="item-input-wrapper"> <i class="icon ion-ios7-search placeholder-icon"></i>
+              <input  ng-model="query" type="search" placeholder="Search">
+            
+            </label>
+           
+            <button class="button button-clear"> Cancel </button>
+         
+          </div>
+          
+          <content has-header="true">
+            <div class="list"> 
+            <a ng-repeat="pet in pets | filter:query" ng-animate="'animate'" class="item item-icon-left" href="#/pet/{{pet.id}}">
+              <h3>{{pet.sku}}</h3>
+              <p>{{pet.title}}</p>
+              </a> 
+              </div>
+          </content>
         </side-menu>
-    </side-menus>
+  </side-menus>
 </view>

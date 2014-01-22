@@ -1,17 +1,18 @@
 <view title="'Home'">
-
-    <header-bar title="pet.title" left-buttons="leftButtons" right-buttons="rightButtons" type="bar-positive" align-title="center">
-    </header-bar>
-    <content has-header="true" padding="true" style="padding: 0 5%; border-radius:15px;">
-        
-        <img src="img/logo.svg" style="width:90%;max-width:300px; display:block; margin:auto">
-        
-        <list>
-            <item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
+  <header-bar title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" type="bar-positive" align-title="center"> </header-bar>
+  <content has-header="true" padding="true" style="padding: 0 5%; border-radius:15px;"> <img src="img/logo.svg" style="width:90%;max-width:300px; display:block; margin:auto"> 
+    <!--        <list>
+               
+             <item ng-repeat="pet in pets" type="item-text-wrap item-icon-left" href="#/pet/{{pet.id}}">
+             
                 <h3>{{pet.sku}}</h3>
-                <p>{{pet.title}}</p>
-            </item>
-        </list>
-    </content>
-
+                <p>{{pet.title}}</p> 
+                  </item> 
+              </list>   -->
+    
+    <div class="list"> <a ng-repeat="pet in pets"  class="item item-thumbnail-left" href="#/pet/{{pet.id}}"> <img src="img/{{pet.sku}}/thumb.png">
+      <h3>{{pet.sku}}</h3>
+      <p>{{pet.title}}</p>
+      </a> </div>
+  </content>
 </view>

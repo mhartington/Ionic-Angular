@@ -6,14 +6,17 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', [
-    'ionic', 
+    'ionic',
     'starter.services',
-    'starter.controllers'
+    'starter.controllers',
+	'ngAnimate'
 ])
 
 
 .config(function ($stateProvider, $urlRouterProvider) {
-
+    
+    
+    
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
@@ -29,15 +32,16 @@ angular.module('starter', [
         templateUrl: "templates/detail.html",
         controller: 'PetDetailCtrl'
     });
-    
-    
-    
-    
-   
-    
-    
+
+
+
+
+
+
+
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/');
 
-});
+});     
+
