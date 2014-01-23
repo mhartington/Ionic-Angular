@@ -9,27 +9,36 @@ angular.module('starter', [
     'ionic',
     'starter.services',
     'starter.controllers',
-	'ngAnimate'
+    'ngAnimate',
 ])
 
 
-.config(function ($stateProvider, $urlRouterProvider) {
-    
-    
-    
+.config(function ($stateProvider, $urlRouterProvider, $sceProvider) {
+
+    $sceProvider.enabled(false);
+
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
-    // Each state's controller can be found in controllers.js 
-    $stateProvider.state('home', {
+    // Each state's controller can be found in controllers.js
+    $stateProvider
+	
+	.state('intro', {
         url: "/",
-        templateUrl: "templates/list.html",
+        templateUrl: "views/intro.html",
+        controller: 'IntroCtrl'
+    })
+	
+	
+	.state('home', {
+        url: "/pet",
+        templateUrl: "views/list.html",
         controller: 'PetIndexCtrl'
-    });
-
-    $stateProvider.state('detail', {
+    })
+	
+	.state('detail', {
         url: "/pet/:petsId",
-        templateUrl: "templates/detail.html",
+        templateUrl: "views/detail.html",
         controller: 'PetDetailCtrl'
     });
 
@@ -43,5 +52,4 @@ angular.module('starter', [
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/');
 
-});     
-
+});

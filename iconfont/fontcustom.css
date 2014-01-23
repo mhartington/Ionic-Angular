@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.eot");
-  src: url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.eot?#iefix") format("embedded-opentype"),
-       url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.woff") format("woff"),
-       url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.ttf") format("truetype"),
-       url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.svg#fontcustom") format("svg");
-  font-weight: normal;
+  src: url("./fontcustom.eot");
+  src: url("./fontcustom.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom.woff") format("woff"),
+       url("./fontcustom.ttf") format("truetype"),
+       url("./fontcustom.svg#fontcustom") format("svg");
+  font-weight: 100;
   font-style: normal;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fontcustom_f82edcea928fd80279bfd9704f8e8004.svg#fontcustom") format("svg");
+    src: url("./fontcustom.svg#fontcustom") format("svg");
   }
 }
 

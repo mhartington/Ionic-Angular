@@ -71,6 +71,7 @@
         -webkit-flex-direction: column;
         flex-direction: column;
         height:100%;
+        width:100%;
 }
 
 video {
@@ -183,7 +184,7 @@ video {
         height: 100%;
     }
     .info {
-        
+
         display: -webkit-box;
         /* OLD - iOS 6-, Safari 3.1-6 */
         display: -moz-box;
@@ -246,7 +247,7 @@ video {
 transition: 500ms ease-in all;
 position: relative;
 display: block;
-} 
+}
 .animate-enter.animate-enter-active, .animate-leave {
 left: 0;
 }
