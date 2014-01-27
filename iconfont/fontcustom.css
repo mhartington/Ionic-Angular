@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fontcustom.eot");
-  src: url("./fontcustom.eot?#iefix") format("embedded-opentype"),
-       url("./fontcustom.woff") format("woff"),
-       url("./fontcustom.ttf") format("truetype"),
-       url("./fontcustom.svg#fontcustom") format("svg");
-  font-weight: 100;
+  src: url("./fontcustom_8193b8354ddb37432ea105e5430b0958.eot");
+  src: url("./fontcustom_8193b8354ddb37432ea105e5430b0958.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_8193b8354ddb37432ea105e5430b0958.woff") format("woff"),
+       url("./fontcustom_8193b8354ddb37432ea105e5430b0958.ttf") format("truetype"),
+       url("./fontcustom_8193b8354ddb37432ea105e5430b0958.svg#fontcustom") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fontcustom.svg#fontcustom") format("svg");
+    src: url("./fontcustom_8193b8354ddb37432ea105e5430b0958.svg#fontcustom") format("svg");
   }
 }
 
@@ -51,19 +51,19 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.icon-360:before { content: "\f110"; }
-.icon-360-outline:before { content: "\f111"; }
-.icon-button:before { content: "\f112"; }
-.icon-button-outline:before { content: "\f113"; }
-.icon-data:before { content: "\f114"; }
-.icon-data-outline:before { content: "\f115"; }
-.icon-feature:before { content: "\f116"; }
-.icon-feature-outline:before { content: "\f117"; }
-.icon-io:before { content: "\f118"; }
-.icon-io-outline:before { content: "\f119"; }
-.icon-kit:before { content: "\f11a"; }
-.icon-kit-outline:before { content: "\f11b"; }
-.icon-probe:before { content: "\f11c"; }
-.icon-probe-outline:before { content: "\f11d"; }
-.icon-video:before { content: "\f11e"; }
-.icon-video-outline:before { content: "\f11f"; }
+.icon-360:before { content: "\f100"; }
+.icon-360-outline:before { content: "\f101"; }
+.icon-button:before { content: "\f102"; }
+.icon-button-outline:before { content: "\f103"; }
+.icon-data:before { content: "\f104"; }
+.icon-data-outline:before { content: "\f105"; }
+.icon-feature:before { content: "\f106"; }
+.icon-feature-outline:before { content: "\f107"; }
+.icon-io:before { content: "\f108"; }
+.icon-io-outline:before { content: "\f109"; }
+.icon-kit:before { content: "\f10a"; }
+.icon-kit-outline:before { content: "\f10b"; }
+.icon-probe:before { content: "\f10c"; }
+.icon-probe-outline:before { content: "\f10d"; }
+.icon-video:before { content: "\f10e"; }
+.icon-video-outline:before { content: "\f10f"; }
