@@ -540,7 +540,7 @@ url(../fonts/ionicons.svg?v=1.4.0#Ionicons) format("svg");
 .ion-woman,
 .ion-wrench,
 .ion-xbox {
-    display: inline-block;
+    display: block;
     font-family: Ionicons;
     speak: none;
     font-style: normal;
@@ -2660,7 +2660,7 @@ body,
     top: 88px !important;
 }
 .has-footer {
-    bottom: 44px !important ;
+    bottom: 44px !important;
 }
 .has-tabs {
     bottom: 49px !important;
@@ -3651,13 +3651,14 @@ a.subdued:last-child {
     font-family: "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     opacity: .7
 }
-.tabs-icon-top .tab-item,
-.tabs-icon-bottom .tab-item {
+.tabs-icon-top .tab-item .icon,
+.tabs-icon-bottom .tab-item .icon {
+    display: block !important;
     font-size: 12px;
     line-height: 14px
 }
-.tab-item .icon {
-    display: block;
+.tab-item .icon:before {
+    display: block !important;
     margin: 0 auto;
     height: 32px;
     font-size: 32px

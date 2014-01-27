@@ -42,8 +42,7 @@
 }
 .wrapper {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    
     width: 100%;
 }
 
@@ -216,6 +215,7 @@ video {
     padding-top: 80px;
     color: #000;
     background-color: #fff;
+    text-align:center;
 }
 #logo {
     margin: 30px 0px;
@@ -243,14 +243,17 @@ video {
 }
 
 
-.animate-enter, .animate-leave {
-transition: 500ms ease-in all;
-position: relative;
-display: block;
+.platform-ios7 .fade-bar {
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
 }
-.animate-enter.animate-enter-active, .animate-leave {
-left: 0;
-}
-.animate-leave.animate-leave-active, .animate-enter {
-left: 500px;
+
+.tab-item.active, .tab-item:active{
+	color:#006db6 !important;
 }

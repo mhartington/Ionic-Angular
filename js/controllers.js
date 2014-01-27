@@ -1,48 +1,49 @@
 angular.module('starter.controllers', [])
 
 
-.controller('IntroCtrl', function($scope, $location) {
-  // Called to navigate to the main app
-  var startApp = function() {
-    $location.path('/pet');
 
-    // Set a flag that we finished the tutorial
-    window.localStorage['didTutorial'] = true;
-  };
+.controller('IntroCtrl', function ($scope, $location) {
+        // Called to navigate to the main app
+        var startApp = function () {
+            $location.path('/pet');
 
-  // Check if the user already did the tutorial and skip it if so
-  if(window.localStorage['didTutorial'] === "true") {
-    startApp();
-    return;
-  }
+            // Set a flag that we finished the tutorial
+            window.localStorage.didTutorial = true;
+        };
 
-  // Move to the next slide
-  $scope.next = function() {
-    $scope.$broadcast('slideBox.nextSlide');
-  };
+        // Check if the user already did the tutorial and skip it if so
+        if (window.localStorage.didTutorial === "true") {
+            startApp();
+            return;
+        }
+
+        // Move to the next slide
+        $scope.next = function () {
+            $scope.$broadcast('slideBox.nextSlide');
+        };
 
 
-  // Our initial right buttons
-  var rightButtons = [
-    {
-      content: 'Next',
-      type: 'button button-clear',
-      tap: function(e) {
-        // Go to the next slide on tap
-        $scope.next();
-      }
+        // Our initial right buttons
+        var rightButtons = [
+            {
+                content: 'Next',
+                type: 'button button-clear',
+                tap: function (e) {
+                    // Go to the next slide on tap
+                    $scope.next();
+                }
     }
   ];
-  
-  // Our initial left buttons
-  var leftButtons = [
-    {
-      content: 'Skip',
-      type: 'button button-clear',
-      tap: function(e) {
-        // Start the app on tap
-        startApp();
-      }
+
+        // Our initial left buttons
+        var leftButtons = [
+            {
+                content: 'Skip',
+                type: 'button button-clear',
+                tap: function (e) {
+                    // Start the app on tap
+                    startApp();
+                }
     }
   ];
 
@@ -77,7 +78,7 @@ angular.module('starter.controllers', [])
     if(index == 2) {
       $scope.rightButtons = [
         {
-          content: 'Start using MyApp',
+          content: 'Start',
           type: 'button button-clear',
           tap: function(e) {
             startApp();
@@ -94,27 +95,38 @@ angular.module('starter.controllers', [])
 
 
 
+
+
+
 // A simple controller that fetches a list of data from a service
 .controller('PetIndexCtrl', function ($scope, PetService) {
     // "Pets" is a service returning mock data (services.js)
     $scope.pets = PetService.all();
     $scope.enableBackButton = false;
-})
 
+    $scope.toggleMenu = function () {
+        $scope.sideMenuController.toggleLeft();
+    };
+})
 
 // A simple controller that shows a tapped item's data
 .controller('PetDetailCtrl', function ($scope, $stateParams, PetService) {
-    // "Pets" is a service returning mock data (services.js)
-    $scope.pet = PetService.get($stateParams.petsId);
+        // "Pets" is a service returning mock data (services.js)
+        $scope.pet = PetService.get($stateParams.petsId);
 
-$scope.enableBackButton = false;
+
+        $scope.toggleMenu = function () {
+            $scope.sideMenuController.toggleLeft();
+            $scope.activeElement.blur();
+
+        };
+
+    $scope.enableBackButton = false;
     $scope.leftButtons = [
         {
             type: 'button-clear',
             content: '<i class="icon ion-navicon-round"></i>',
-            tap: function (e) {
-                $scope.sideMenuController.toggleLeft();
-            }
+            tap: $scope.toggleMenu
   }
 ];
 
@@ -134,8 +146,6 @@ $scope.enableBackButton = false;
 
 })
 
-
-
 .directive('fadeBar', function ($timeout) {
     return {
         restrict: 'E',
@@ -153,7 +163,6 @@ $scope.enableBackButton = false;
         }
     };
 })
-
 
 .directive('imageRotator', function ($timeout) {
     return {

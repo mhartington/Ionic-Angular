@@ -39,7 +39,7 @@
 .icon-probe-outline:before,
 .icon-video:before,
 .icon-video-outline:before {
-  display: inline-block;
+  display: block !important;
   font-family: "fontcustom";
   font-style: normal;
   font-weight: normal;
