@@ -113,11 +113,11 @@ angular.module('starter.controllers', [])
 .controller('PetDetailCtrl', function ($scope, $stateParams, PetService) {
         // "Pets" is a service returning mock data (services.js)
         $scope.pet = PetService.get($stateParams.petsId);
-
+        
+        
 
         $scope.toggleMenu = function () {
             $scope.sideMenuController.toggleLeft();
-            $scope.activeElement.blur();
 
         };
 
@@ -125,7 +125,7 @@ angular.module('starter.controllers', [])
     $scope.leftButtons = [
         {
             type: 'button-clear',
-            content: '<i class="icon ion-navicon-round"></i>',
+            content: '<i class="icon ion-navicon"></i>',
             tap: $scope.toggleMenu
   }
 ];
@@ -159,6 +159,20 @@ angular.module('starter.controllers', [])
                     // Set the transparency of the fade bar
                     $element[0].style.opacity = Math.abs(ratio);
                 });
+            });
+        }
+    };
+})
+
+
+.directive('cancel', function($timeout){
+    return{
+        restrict: 'A',
+        link: function($scope, $element,$attr){
+            $timeout(function(){
+                    $element.on('tap', function(){
+                        $('input').blur().val('');
+                    });
             });
         }
     };

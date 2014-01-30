@@ -1,43 +1,47 @@
 <view title="pet.sku" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
 
-            <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
-                <tab title="{{page.id}}" icon-on="{{page.icon}}" icon-off="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
+    <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
+        <tab title="{{page.id}}" icon="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
 
-                    <!--IF CONTENT TYPE IS SLIDE-->
+            <!--IF CONTENT TYPE IS SLIDE-->
 
-                    <slide-box ng-if="page.type === 'slide'">
-                        <slide ng-repeat="slide in page.slides">
-                            <div class="wrapper has-tabs has-header">
-                                <div class="product">
-                                    <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
-                                </div>
-                                <div class="info">{{slide.content}}</div>
-                            </div>
-                        </slide>
-                    </slide-box>
-
-                    <!--IF CONTENT TYPE IS NORMAL-->
-                    <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
-                        <div class="product" image-Rotator>
-                            <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
+            <slide-box ng-if="page.type === 'slide'">
+                <slide ng-repeat="slide in page.slides">
+                    <div class="wrapper has-tabs has-header">
+                        <div class="product">
+                            <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
                         </div>
-                        <div class="info">{{page.content}}</div>
+                        <div class="info">{{slide.content}}</div>
+                    </div>
+                </slide>
+            </slide-box>
+
+            <!--IF CONTENT TYPE IS NORMAL-->
+            <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
+                <div class="product" image-Rotator>
+                    <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
+                </div>
+                <div class="info">{{page.content}}</div>
+            </div>
+
+
+
+            <!--IF CONTENT TYPE IS Video-->
+            <div ng-if="page.type === 'video'" class="wrapper has-tabs has-header">
+                <div class="video">
+
+
+
+                    <div class="embed-container">
+                        <h3>{{pet.sku}}</h3>
+                        <video controls poster="img/poster.png">
+
+                            <source src="{{pet.src}}" type="video/mp4">
+                        </video>
                     </div>
 
-                    <!--IF CONTENT TYPE IS Video-->
-                    <div ng-if="page.type === 'video'" class="wrapper has-tabs has-header">
-                        <div class="video">
-                            <h4>{{pet.sku}}</h4>
-
-
-            <video controls poster="img/poster.png">
-
-            <source src="{{pet.src}}" type="video/mp4">
-            </video>
-
-
-                        </div>
-                    </div>
-                </tab>
-            </tabs>
+                </div>
+            </div>
+        </tab>
+    </tabs>
 </view>

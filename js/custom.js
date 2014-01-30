@@ -49,11 +49,11 @@
                     if (currPos - pageX >= widthStep) {
                         currImg++;
                         if (currImg > imageTotal) {
-                            currImg = 1;
+                            currImg = 0;
                         }
                     } else {
                         currImg--;
-                        if (currImg < 1) {
+                        if (currImg < 0) {
                             currImg = imageTotal;
                         }
                     }
