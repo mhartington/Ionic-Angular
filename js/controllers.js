@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
 
 
-
+//Intro Controller
 .controller('IntroCtrl', function ($scope, $location) {
         // Called to navigate to the main app
         var startApp = function () {
@@ -92,12 +92,6 @@ angular.module('starter.controllers', [])
   };
 })
 
-
-
-
-
-
-
 // A simple controller that fetches a list of data from a service
 .controller('PetIndexCtrl', function ($scope, PetService) {
     // "Pets" is a service returning mock data (services.js)
@@ -136,9 +130,7 @@ angular.module('starter.controllers', [])
             type: 'button-clear',
             content: '<i class="icon ion-ios7-upload-outline"></i>',
             tap: function (e) {
-                var url = $scope.pet;
-
-                window.open(url.manual, '_blank');
+                window.open($scope.pet.manual, '_blank');
             }
   }
 ];
@@ -146,6 +138,7 @@ angular.module('starter.controllers', [])
 
 })
 
+//Fadebar Directive
 .directive('fadeBar', function ($timeout) {
     return {
         restrict: 'E',
@@ -164,7 +157,7 @@ angular.module('starter.controllers', [])
     };
 })
 
-
+//Cancel Directive - Nothing Yet
 .directive('cancel', function($timeout){
     return{
         restrict: 'A',
@@ -178,6 +171,7 @@ angular.module('starter.controllers', [])
     };
 })
 
+//360 Rotator Directive
 .directive('imageRotator', function ($timeout) {
     return {
         restrict: 'A',
@@ -191,4 +185,17 @@ angular.module('starter.controllers', [])
 
         }
     };
-});
+})
+
+.directive('noDragRight', ['$ionicGesture', function($ionicGesture) {
+
+  return {
+    restrict: 'A',
+    link: function($scope, $element, $attr) {
+
+      $ionicGesture.on('dragright', function(e) {
+        e.gesture.srcEvent.preventDefault();
+      }, $element);
+    }
+  }
+}]);

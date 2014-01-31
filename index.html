@@ -71,7 +71,7 @@
 			</div>
 			<content has-header="true">
 				<div class="list">
-					<a ng-click="toggleMenu()" ng-repeat="pet in pets | filter:query" class="item item-icon-left" href="#/pet/{{pet.id}}" ng-class="{active:active}">
+					<a ng-click="toggleMenu()" ng-repeat="pet in pets | filter:query | orderBy:'sku'" class="item item-icon-left" href="#/pet/{{pet.id}}" ng-class="{active:active}">
 						<h3>{{pet.sku}}</h3>
 						<p>{{pet.title}}</p>
 					</a>

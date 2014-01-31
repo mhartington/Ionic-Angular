@@ -1,4 +1,4 @@
-<view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
+<view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true" noDragRight>
   
   <content has-header="true" padding="true"> 
     <img src="img/logo.svg" class="logo"> 
@@ -12,7 +12,7 @@
               </list>   -->
     
     <div class="list card"> 
-      <a ng-repeat="pet in pets"  class="item item-thumbnail-left" href="#/pet/{{pet.id}}"> <img src="img/{{pet.sku}}/thumb.png">
+      <a ng-repeat="pet in pets | orderBy:'sku'"  class="item item-thumbnail-left" href="#/pet/{{pet.id}}"> <img src="img/{{pet.sku}}/thumb.png">
       <h3>{{pet.sku}}</h3>
       <p>{{pet.title}}</p>
       </a> </div>

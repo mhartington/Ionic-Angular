@@ -11,7 +11,9 @@
                         <div class="product">
                             <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
                         </div>
-                        <div class="info">{{slide.content}}</div>
+                        <div class="info">
+                        <p>{{slide.content}}</p>
+                        </div>
                     </div>
                 </slide>
             </slide-box>
@@ -21,7 +23,9 @@
                 <div class="product" image-Rotator>
                     <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
                 </div>
-                <div class="info">{{page.content}}</div>
+                <div class="info">
+                <p>{{page.content}}</p>
+                </div>
             </div>
 
 
@@ -36,7 +40,7 @@
                         <h3>{{pet.sku}}</h3>
                         <video controls poster="img/poster.png">
 
-                            <source src="{{pet.src}}" type="video/mp4">
+                            <source src="{{page.src}}" type="video/mp4">
                         </video>
                     </div>
 
