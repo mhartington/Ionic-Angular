@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<widget id="com.hanna-inst.ios" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ProductDemo</name>
+    <description>
+        A interactive demo of select products made by Hanna Instruments.
+    </description>
+    <author email="mhartington@hannainst.com" href="http://hannainst.com">
+        Hanna Instruments
+    </author>
+    <access origin="*" />
+    <access origin="*.pushwoosh.com" />
+    <preference name="fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#006db6" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <content src="index.html" />
+</widget>

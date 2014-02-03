@@ -1,18 +1,30 @@
 $(document).on('deviceready', function () {
 
-console.log("device ready");
+    console.log("device ready");
 
+    //    $(document).on('online', function () {
+    ////      registerPushwoosh();
+    ////            app.initialize();   
+    //        console.log("Connected, Lets get pushing");
+    //    });
+    //
+    //    $(document).on('offline', function () {
+    //        console.log("No Connection");
+    //    });
 
-var networkState = navigator.connection.type;
-if (networkState == "none") {
-    console.log ("No Connection");
-    //NOTHING...
+});
 
-} else {
-    /*registerPushwoosh();
-        app.initialize();*/
+(function () {
+    var networkState = navigator.connection.type;
+    if (networkState == "none") {
+        console.log("No Connection");
+        //NOTHING...
 
-    console.log("Connected, Lets get pushing");
-}
+    } else {
+        //        registerPushwoosh();
+        app.initialize();
+        registerPushwoosh();
 
+        console.log("Connected, Lets get pushing");
+    }
 });

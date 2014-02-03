@@ -1,8 +1,8 @@
-<view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true" noDragRight>
-  
-  <content has-header="true" padding="true"> 
-    <img src="img/logo.svg" class="logo"> 
-    <!--        <list>
+<view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
+
+    <content has-header="true" padding="true">
+        <img src="img/logo.svg" class="logo">
+        <!--        <list>
                
              <item ng-repeat="pet in pets" type="item-text-wrap item-icon-left" href="#/pet/{{pet.id}}">
              
@@ -10,11 +10,13 @@
                 <p>{{pet.title}}</p> 
                   </item> 
               </list>   -->
-    
-    <div class="list card"> 
-      <a ng-repeat="pet in pets | orderBy:'sku'"  class="item item-thumbnail-left" href="#/pet/{{pet.id}}"> <img src="img/{{pet.sku}}/thumb.png">
-      <h3>{{pet.sku}}</h3>
-      <p>{{pet.title}}</p>
-      </a> </div>
-  </content>
+
+        <div class="list card">
+            <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" href="#/pet/{{pet.id}}">
+                <img src="img/{{pet.sku}}/thumb.png">
+                <h3>{{pet.sku}}</h3>
+                <p>{{pet.title}}</p>
+            </a>
+        </div>
+    </content>
 </view>

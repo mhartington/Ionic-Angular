@@ -258,3 +258,7 @@ video {
 	display:block;
 	margin:auto
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
