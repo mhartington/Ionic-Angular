@@ -1,20 +1,20 @@
 angular.module('starter.controllers', [])
 
 //Intro Controller
-.controller('IntroCtrl', function ($scope, $location) {
+.controller('IntroCtrl', function ($scope, $state) {
         // Called to navigate to the main app
         var startApp = function () {
-            $location.path('/pet');
+            $state.go('home');
 
             // Set a flag that we finished the tutorial
             window.localStorage.didTutorial = true;
         };
 
         // Check if the user already did the tutorial and skip it if so
-        if (window.localStorage.didTutorial === "true") {
-            startApp();
-            return;
-        }
+//        if (window.localStorage.didTutorial === "true") {
+//            startApp();
+//            return;
+//        }
 
         // Move to the next slide
         $scope.next = function () {

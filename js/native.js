@@ -2,26 +2,23 @@ $(document).on('deviceready', function () {
 
     console.log("device ready");
 
-    //    $(document).on('online', function () {
-    ////      registerPushwoosh();
-    ////            app.initialize();   
-    //        console.log("Connected, Lets get pushing");
-    //    });
-    //
-    //    $(document).on('offline', function () {
-    //        console.log("No Connection");
-    //    });
+    $(document).on('online', function () {
+        console.log("Connected, Lets get pushing");
+    });
+
+    $(document).on('offline', function () {
+        console.log("No Connection");
+    });
 
 });
 
-(function () {
+$(function () {
     var networkState = navigator.connection.type;
     if (networkState == "none") {
         console.log("No Connection");
         //NOTHING...
 
     } else {
-        //        registerPushwoosh();
         app.initialize();
         registerPushwoosh();
 

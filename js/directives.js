@@ -20,14 +20,14 @@ angular.module('starter.directives', ['ionic.service.gesture'])
 })
 
 //Cancel Directive - Nothing Yet
-.directive('cancel', function($timeout){
-    return{
+.directive('cancel', function ($timeout) {
+    return {
         restrict: 'A',
-        link: function($scope, $element,$attr){
-            $timeout(function(){
-                    $element.on('tap', function(){
-                        $('input').blur().val('');
-                    });
+        link: function ($scope, $element, $attr) {
+            $timeout(function () {
+                $element.on('tap', function () {
+                    $('input').blur().val('');
+                });
             });
         }
     };
@@ -49,15 +49,41 @@ angular.module('starter.directives', ['ionic.service.gesture'])
     };
 })
 
-.directive('noDragRight', ['$ionicGesture', function($ionicGesture) {
+.directive('noDragRight', ['$ionicGesture',
+    function ($ionicGesture) {
 
-  return {
-    restrict: 'A',
-    link: function($scope, $element, $attr) {
+        return {
+            restrict: 'A',
+            link: function ($scope, $element, $attr) {
 
-      $ionicGesture.on('dragright', function(e) {
-        e.gesture.srcEvent.preventDefault();
-      }, $element);
-    }
-  }
-}]);
+                $ionicGesture.on('dragright', function (e) {
+                    e.gesture.srcEvent.preventDefault();
+                }, $element);
+            }
+        };
+}])
+
+
+
+.directive('shrink', function ($timeout) {
+    return {
+        restrict: 'A',
+        link: function ($scope, $element, $attr) {
+            // Run in the next scope digest
+            $timeout(function () {
+                // Watch for changes to the x var which is a value between 0 and 275
+                $scope.$watch('sideMenuContentTranslateX', function (x) {
+                    var toScale = (1 - Math.abs(x / 275));
+                    //we do not want the side menu to be less than 70 percent of it's original size
+                    if (toScale > 0.7) {
+                        $element[0].style.webkitTransform += ' scaleY(' + toScale + ')';
+                    }
+                    //if we are at the end of the animation then skew it
+                    if (x === 275) {
+                        $element[0].style.webkitTransform += ' scaleY(0.7) rotateY(-600deg)';
+                    }
+                });
+            });
+        }
+    };
+});

@@ -12,7 +12,7 @@
                             <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
                         </div>
                         <div class="info">
-                        <p>{{slide.content}}</p>
+                            <p>{{slide.content}}</p>
                         </div>
                     </div>
                 </slide>
@@ -24,7 +24,7 @@
                     <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
                 </div>
                 <div class="info">
-                <p>{{page.content}}</p>
+                    <p>{{page.content}}</p>
                 </div>
             </div>
 
@@ -35,13 +35,10 @@
                 <div class="video">
 
 
-
+ <h3>{{pet.sku}}</h3>
                     <div class="embed-container">
-                        <h3>{{pet.sku}}</h3>
-                        <video controls poster="img/poster.png">
-
-                            <source src="{{page.src}}" type="video/mp4">
-                        </video>
+                       
+                        <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/M7lc1UVf-VE?color=white&theme=light" frameborder="0" allowfullscreen>
                     </div>
 
                 </div>

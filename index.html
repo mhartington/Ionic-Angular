@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <title>Hanna Instruments</title>
 
     <!-- ionic css -->
@@ -15,6 +15,7 @@
 
     <script src="lib/jquery.min.js"></script>
     <script src="js/custom.js"></script>
+  
 
     <!-- angularjs scripts -->
     <script src="lib/js/ionic.min.js"></script>
@@ -37,10 +38,10 @@
     <script src="js/native.js"></script>
 </head>
 
-<body animation="slide-left-right-ios7">
+<body>
     <side-menus>
         <fade-bar></fade-bar>
-        <pane side-menu-content>
+        <pane side-menu-content shrink >
             <nav-bar type="bar-positive" left-buttons="leftButtons" right-buttons="rightButtons" animation="nav-title-slide-ios7"></nav-bar>
 
             <!-- where the initial view template will be rendered -->
@@ -49,19 +50,7 @@
 
         <!-- Left menu -->
         <side-menu side="left" ng-controller="PetIndexCtrl">
-            <!--   <div class="bar bar-header bar-dark item-input-inset">
 
-                <label class="item-input-wrapper">
-                    <i class="icon ion-ios7-search placeholder-icon"></i>
-                    <input ng-model="query" type="search" placeholder="Search">
-
-                </label>
-
-
-                
-                <button cancel class="button button-clear">Cancel</button>
-
-            </div>-->
             <div class="bar bar-header bar-dark">
                 <div class="button-bar">
                     <a ng-click="toggleMenu()" href="#/pet" class="button button-clear">Home</a>
@@ -78,53 +67,20 @@
         </side-menu>
     </side-menus>
 
-    <!--
-    
-<script id="intro.html" type="text/ng-template">
-    <view title="'Intro'" left-buttons="leftButtons" right-buttons="rightButtons">
- 
-   
-    <slide-box on-slide-changed="slideChanged(index)">
-      <slide>
-        <h3>Thank you for choosing the Awesome App!</h3>
-        <div id="logo">
-          <img src="img/logo.svg" class="logo">
-        </div>
-        <p>
-          We've worked super hard to make you happy.
-        </p>
-        <p>
-          But if you are angry, too bad.
-        </p>
-      </slide>
-      <slide>
-        <h3>Using Awesome</h3>
-        <div id="list">
-          <h5>Just three steps:</h5>
-          <ol>
-            <li>Be awesome</li>
-            <li>Stay awesome</li>
-            <li>There is no step 3</li>
-          </ol>
-        </div>
-      </slide>
-      <slide>
-        <h3>Any questions?</h3>
-        <p>
-          Too bad!
-        </p>
-        <a class="button icon-right ion-checkmark  button-positive" ng-click="startApp();" >Let's Start</a>
-      </slide>
-    </slide-box>
-  </view>
-    
-</script>
-<script id="list.html" type="text/ng-template">
-    <view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
+
+    <script type="text/ng-template" id="list.html">
+        <view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
 
     <content has-header="true" padding="true">
         <img src="img/logo.svg" class="logo">
-    
+        <!--        <list>
+               
+             <item ng-repeat="pet in pets" type="item-text-wrap item-icon-left" href="#/pet/{{pet.id}}">
+             
+                <h3>{{pet.sku}}</h3>
+                <p>{{pet.title}}</p> 
+                  </item> 
+              </list>   -->
 
         <div class="list card">
             <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" href="#/pet/{{pet.id}}">
@@ -135,63 +91,7 @@
         </div>
     </content>
 </view>
-    
-</script>
-<script id="detail.html" type="text/ng-template">
-   <view title="pet.sku" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
-
-    <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
-        <tab title="{{page.id}}" icon="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
-
-
-            <slide-box ng-if="page.type === 'slide'">
-                <slide ng-repeat="slide in page.slides">
-                    <div class="wrapper has-tabs has-header">
-                        <div class="product">
-                            <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
-                        </div>
-                        <div class="info">
-                        <p>{{slide.content}}</p>
-                        </div>
-                    </div>
-                </slide>
-            </slide-box>
-
-    
-            <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
-                <div class="product" image-Rotator>
-                    <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
-                </div>
-                <div class="info">
-                <p>{{page.content}}</p>
-                </div>
-            </div>
-
-
-
-     
-            <div ng-if="page.type === 'video'" class="wrapper has-tabs has-header">
-                <div class="video">
-
-
-
-                    <div class="embed-container">
-                        <h3>{{pet.sku}}</h3>
-                        <video controls poster="img/poster.png">
-
-                            <source src="{{page.src}}" type="video/mp4">
-                        </video>
-                    </div>
-
-                </div>
-            </div>
-        </tab>
-    </tabs>
-</view>
-    
-</script>
-
--->
+    </script>
 </body>
 
 </html>
