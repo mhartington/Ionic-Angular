@@ -8,90 +8,37 @@
     <title>Hanna Instruments</title>
 
     <!-- ionic css -->
-    <link href="lib/css/ionic.css" rel="stylesheet">
+   <link href="http://code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    
+    <!-- app css -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="iconfont/fontcustom.css" rel="stylesheet">
-    <!-- your app's css -->
 
+    
+    <!--Requiered JS-->
     <script src="lib/jquery.min.js"></script>
     <script src="js/custom.js"></script>
-  
-
-    <!-- angularjs scripts -->
-    <script src="lib/js/ionic.min.js"></script>
-    <script src="lib/js/angular/angular.min.js"></script>
-    <script src="lib/js/angular/angular-animate.min.js"></script>
-    <script src="lib/js/angular/angular-route.min.js"></script>
-    <script src="lib/js/angular/angular-sanitize.min.js"></script>
-    <script src="lib/js/angular-ui/angular-ui-router.min.js"></script>
-    <script src="lib/js/ionic-angular.min.js"></script>
+    
+<script src="http://code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
 
     <!-- cordova script -->
     <script src="cordova.js"></script>
 
-    <!-- your app's script -->
+    <!-- app script -->
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/directives.js"></script>
     <script src="js/index.js"></script>
     <script src="js/native.js"></script>
+
 </head>
 
 <body>
-    <side-menus>
-        <fade-bar></fade-bar>
-        <pane side-menu-content shrink >
-            <nav-bar type="bar-positive" left-buttons="leftButtons" right-buttons="rightButtons" animation="nav-title-slide-ios7"></nav-bar>
+    
+    <!-- where the initial view template will be rendered -->
+    <nav-view animation="slide-left-right-ios7"></nav-view>
 
-            <!-- where the initial view template will be rendered -->
-            <nav-view animation="slide-left-right"></nav-view>
-        </pane>
-
-        <!-- Left menu -->
-        <side-menu side="left" ng-controller="PetIndexCtrl">
-
-            <div class="bar bar-header bar-dark">
-                <div class="button-bar">
-                    <a ng-click="toggleMenu()" href="#/pet" class="button button-clear">Home</a>
-                </div>
-            </div>
-            <content has-header="true">
-                <div class="list">
-                    <a ng-click="toggleMenu()" ng-repeat="pet in pets | filter:query | orderBy:'sku'" class="item item-icon-left" href="#/pet/{{pet.id}}" ng-class="{active:active}">
-                        <h3>{{pet.sku}}</h3>
-                        <p>{{pet.title}}</p>
-                    </a>
-                </div>
-            </content>
-        </side-menu>
-    </side-menus>
-
-
-    <script type="text/ng-template" id="list.html">
-        <view title="'Hanna Instruments'" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
-
-    <content has-header="true" padding="true">
-        <img src="img/logo.svg" class="logo">
-        <!--        <list>
-               
-             <item ng-repeat="pet in pets" type="item-text-wrap item-icon-left" href="#/pet/{{pet.id}}">
-             
-                <h3>{{pet.sku}}</h3>
-                <p>{{pet.title}}</p> 
-                  </item> 
-              </list>   -->
-
-        <div class="list card">
-            <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" href="#/pet/{{pet.id}}">
-                <img src="img/{{pet.sku}}/thumb.png">
-                <h3>{{pet.sku}}</h3>
-                <p>{{pet.title}}</p>
-            </a>
-        </div>
-    </content>
-</view>
-    </script>
 </body>
 
 </html>

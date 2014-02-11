@@ -1,0 +1,25 @@
+<view hide-back-button="true" hide-back-button="true">
+
+    <header-bar type="bar-positive" title="'Hanna Instruments'" animation="nav-title-slide-ios7" drag-content="true"></header-bar>
+
+    <content has-header="true" padding="true">
+
+        <img src="img/logo.svg" class="logo">
+
+        <div class="list card">
+
+            <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" href="#product/{{pet.id}}">
+
+                <img src="img/{{pet.sku}}/thumb.png">
+
+                <h3>{{pet.sku}}</h3>
+
+                <p>{{pet.title}}</p>
+
+            </a>
+
+        </div>
+
+    </content>
+
+    </view

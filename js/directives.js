@@ -63,24 +63,16 @@ angular.module('starter.directives', ['ionic.service.gesture'])
         };
 }])
 
-
-
-.directive('shrink', function ($timeout) {
+.directive('shrink', function($timeout) {
     return {
         restrict: 'A',
-        link: function ($scope, $element, $attr) {
+        link: function($scope, $element, $attr) {
             // Run in the next scope digest
-            $timeout(function () {
+            $timeout(function() {
                 // Watch for changes to the x var which is a value between 0 and 275
-                $scope.$watch('sideMenuContentTranslateX', function (x) {
-                    var toScale = (1 - Math.abs(x / 275));
-                    //we do not want the side menu to be less than 70 percent of it's original size
-                    if (toScale > 0.7) {
-                        $element[0].style.webkitTransform += ' scaleY(' + toScale + ')';
-                    }
-                    //if we are at the end of the animation then skew it
+                $scope.$watch('sideMenuContentTranslateX', function(x) {
                     if (x === 275) {
-                        $element[0].style.webkitTransform += ' scaleY(0.7) rotateY(-600deg)';
+                        $element[0].style.webkitTransform += ' scaleY(0.6) scaleX(0.6) translateX(-140px)';// skewY(-20deg)';
                     }
                 });
             });

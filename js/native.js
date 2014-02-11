@@ -10,18 +10,19 @@ $(document).on('deviceready', function () {
         console.log("No Connection");
     });
 
+
 });
 
-$(function () {
-    var networkState = navigator.connection.type;
-    if (networkState == "none") {
-        console.log("No Connection");
-        //NOTHING...
+ $(function () {
+        var networkState = navigator.connection.type;
+        if (networkState == "none") {
+            console.log("No Connection");
+            //NOTHING...
 
-    } else {
-        app.initialize();
-        registerPushwoosh();
+        } else {
+            app.initialize();
+            registerPushwoosh();
 
-        console.log("Connected, Lets get pushing");
-    }
-});
+            console.log("Connected, Lets get pushing");
+        }
+    });

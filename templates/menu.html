@@ -1,0 +1,42 @@
+<side-menus>
+
+    <fade-bar></fade-bar>
+
+    <pane side-menu-content drag-content="true">
+
+        <nav-bar type="bar-positive" hide-back-button="true"></nav-bar>
+
+        <nav-view name="content"></nav-view>
+
+    </pane>
+
+    <side-menu side="left" ng-controller="IndexCtrl">
+
+        <div class="bar bar-header bar-dark">
+
+            <div class="button-bar">
+                
+                <a ng-href="#/main" class="button button-clear">Home</a>
+
+            </div>
+
+        </div>
+        <content has-header="true">
+
+            <div class="list">
+
+                <a ng-click="toggleMenu()" ng-repeat="pet in pets | filter:query | orderBy:'sku'" class="item item-icon-left" href="#/product/{{pet.id}}">
+
+                    <h3>{{pet.sku}}</h3>
+
+                    <p>{{pet.title}}</p>
+
+                </a>
+
+            </div>
+
+        </content>
+
+    </side-menu>
+
+</side-menus>
