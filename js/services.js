@@ -1,10 +1,6 @@
 angular.module('starter.services', [])
 
-/**
- * A simple example service that returns some data.
- */
 .factory('PetService', function () {
-
 
     var pets = [
  //        902
@@ -177,7 +173,7 @@ angular.module('starter.services', [])
                     "type": "video",
                     "id": "Video",
                     "icon": "icon icon-video",
-                     "src": "http://hannadev.com/video/98703.mp4"
+                     "src": "http://www.youtube.com/embed/24tz2IgMYOc?rel=0?color=white&theme=light"
                 },
 
 
@@ -388,7 +384,7 @@ angular.module('starter.services', [])
                     "type": "video",
                     "id": "Video",
                     "icon": "icon icon-video",
-                    "src": "http://hannadev.com/video/edge.mp4"
+                    "src": "http://www.youtube.com/embed/bmsL3shICUg?rel=0?color=white&theme=light"
                 },
 
                 "Electrode": {
@@ -423,4 +419,5 @@ angular.module('starter.services', [])
             return pets[petId];
         }
     };
+
 });

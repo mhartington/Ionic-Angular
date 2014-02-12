@@ -1,41 +1,63 @@
 <view title="'Intro'">
+
     <header-bar type="bar-positive" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true"></header-bar>
 
-    <slide-box on-slide-changed="slideChanged(index)">
-    
+    <slide-box on-slide-changed="slideChanged(index)" does-continue="true">
+
         <slide>
-            <h3>Thank you for choosing the Awesome App!</h3>
-            <div id="logo">
+
+            <h1>Welcome</h1>
+
+            <div class="logo">
+
                 <img src="img/logo.svg" class="logo">
+
             </div>
-            <p>
-                We've worked super hard to make you happy.
-            </p>
-            <p>
-                But if you are angry, too bad.
-            </p>
+
+            <p>This interactie demo lets you learn
+                <br>more about some of key products from
+                <br>Hanna Instruments</p>
+
+
         </slide>
 
         <slide>
-            <h3>Using Awesome</h3>
+
+
+
+            <h1>Complete Detail</h1>
+
             <div id="list">
-                <h5>Just three steps:</h5>
-                <ol>
-                    <li>Be awesome</li>
-                    <li>Stay awesome</li>
-                    <li>There is no step 3</li>
-                </ol>
+
+                <p>Here you can:</p>
+
+                <ul>
+
+                    <li>See each product in 360&deg;</li>
+
+                    <li>View important features</li>
+
+                    <li>Link directly to manuals, videos, and other online assets</li>
+
+                </ul>
+
             </div>
+
         </slide>
 
         <slide>
-            <h3>Any questions?</h3>
-            <p>
-                Too bad!
-            </p>
+
+
+            <h1>Ready?</h1>
+
+            <br>
+
+            <br>
 
             <a class="button icon-right ion-checkmark  button-positive" ng-click="startApp()">Let's Start</a>
 
         </slide>
+
     </slide-box>
+
 </view>

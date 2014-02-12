@@ -7,15 +7,16 @@ angular.module('starter.controllers', [])
         $state.go('main');
 
         // Set a flag that we finished the tutorial
-        window.localStorage.didTutorial = true;
+        // Set a flag that we finished the tutorial
+        window.localStorage['didTutorial'] = true;
     };
 
+    //No this is silly
     // Check if the user already did the tutorial and skip it if so
-    //        if (window.localStorage.didTutorial === "true") {
-    //            startApp();
-    //            return;
-    //        }
-
+    if (window.localStorage['didTutorial'] === "true") {
+        console.log('Skip intro');
+        $scope.startApp();
+    }
     // Move to the next slide
     $scope.next = function () {
         $scope.$broadcast('slideBox.nextSlide');
@@ -91,24 +92,14 @@ angular.module('starter.controllers', [])
     };
 })
 
-
 .controller('IndexCtrl', function ($scope, PetService) {
     // "Pets" is a service returning mock data (services.js)
     $scope.pets = PetService.all();
     $scope.enableBackButton = false;
 
-    $scope.travle = function () {
-        $state.go('menu.detail');
-    };
-
-
-    $scope.toggleMenu = function () {
-        $scope.sideMenuController.toggleLeft();
-    };
 })
 
-
-.controller('DetailCtrl', function ($scope, $stateParams, PetService,$ionicActionSheet) {
+.controller('DetailCtrl', function ($scope, $stateParams, PetService, $ionicActionSheet) {
 
     $scope.pet = PetService.get($stateParams.petsId);
 
@@ -116,45 +107,51 @@ angular.module('starter.controllers', [])
         $scope.sideMenuController.toggleLeft();
     };
 
-    $scope.show = function() {
+    $scope.show = function () {
 
-    // Show the action sheet
-    $ionicActionSheet.show({
+        // Show the action sheet
+        $ionicActionSheet.show({
 
-      // The various non-destructive button choices
-      buttons: [
-        {text: 'Manual'},
-        { text: 'See on Site' },
+            // The various non-destructive button choices
+            buttons: [
+                {
+                    text: 'Manual'
+                },
+ //        { text: 'See on Site' },
       ],
 
 
 
-      // The text of the cancel button
-      cancelText: 'Close',
+            // The text of the cancel button
+            cancelText: 'Close',
 
-      // Called when the sheet is cancelled, either from triggering the
-      // cancel button, or tapping the backdrop, or using escape on the keyboard
-      cancel: function() {
-      },
+            // Called when the sheet is cancelled, either from triggering the
+            // cancel button, or tapping the backdrop, or using escape on the keyboard
+            cancel: function () {},
 
-      // Called when one of the non-destructive buttons is clicked, with
-      // the index of the button that was clicked. Return
-      // "true" to tell the action sheet to close. Return false to not close.
-      buttonClicked: function(index) {
-         
-       
-      },
+            // Called when one of the non-destructive buttons is clicked, with
+            // the index of the button that was clicked. Return
+            // "true" to tell the action sheet to close. Return false to not close.
+            buttonClicked: function (index) {
+                if (index === 0) { // Manual Button
+                    window.open($scope.pet.manual, '_blank', 'transitionstyle=fliphorizontal');
+                } else if (index === 1) {
+                    alert('See on Site button clicked...');
+                }
 
-      // Called when the destructive button is clicked. Return true to close the
-      // action sheet. False to keep it open
-      destructiveButtonClicked: function() {
-        return true;
-            
-      }
-    });
+                return true;
+            },
 
-  };
-  
+            // Called when the destructive button is clicked. Return true to close the
+            // action sheet. False to keep it open
+            destructiveButtonClicked: function () {
+                return true;
+
+            }
+        });
+
+    };
+
 
 
     $scope.rightButtons = [
@@ -162,7 +159,7 @@ angular.module('starter.controllers', [])
             type: 'button-clear',
             content: '<i class="icon ion-ios7-upload-outline"></i>',
             tap: function (e) {
-                    $scope.show();
+                $scope.show();
 
             }
           }
@@ -170,7 +167,6 @@ angular.module('starter.controllers', [])
 
     $scope.enableBackButton = true;
 })
-
 
 .controller('MenuCtrl', function ($scope) {
     $scope.toggleMenu = function () {

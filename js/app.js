@@ -1,7 +1,7 @@
 angular.module('starter', ['ionic',
                            'starter.services',
                            'starter.controllers',
-                           'starter.directives'
+                           'starter.directives',
                           ])
 
 .config(function ($stateProvider, $urlRouterProvider, $sceProvider) {

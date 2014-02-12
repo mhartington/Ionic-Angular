@@ -1,42 +1,47 @@
-<side-menus>
+<view>
 
-    <fade-bar></fade-bar>
+    <side-menus>
 
-    <pane side-menu-content drag-content="true">
+        <fade-bar></fade-bar>
 
-        <nav-bar type="bar-positive" hide-back-button="true"></nav-bar>
+        <pane side-menu-content drag-content="true">
 
-        <nav-view name="content"></nav-view>
+            <nav-bar type="bar-positive" hide-back-button="true"></nav-bar>
 
-    </pane>
+            <nav-view name="content" animation="slide-left-right-ios7"></nav-view>
 
-    <side-menu side="left" ng-controller="IndexCtrl">
+        </pane>
 
-        <div class="bar bar-header bar-dark">
+        <side-menu side="left" ng-controller="IndexCtrl">
 
-            <div class="button-bar">
-                
-                <a ng-href="#/main" class="button button-clear">Home</a>
+            <div class="bar bar-header bar-dark">
 
-            </div>
+                <div class="button-bar">
 
-        </div>
-        <content has-header="true">
+                    <a ng-href="#/main" class="button button-clear">Home</a>
 
-            <div class="list">
-
-                <a ng-click="toggleMenu()" ng-repeat="pet in pets | filter:query | orderBy:'sku'" class="item item-icon-left" href="#/product/{{pet.id}}">
-
-                    <h3>{{pet.sku}}</h3>
-
-                    <p>{{pet.title}}</p>
-
-                </a>
+                </div>
 
             </div>
 
-        </content>
+            <content has-header="true">
 
-    </side-menu>
+                <div class="list">
 
-</side-menus>
+                    <a ng-click="toggleMenu()" ng-repeat="pet in pets | filter:query | orderBy:'sku'" class="item item-icon-left" ng-href="#/product/{{pet.id}}">
+
+                        <h3>{{pet.sku}}</h3>
+
+                        <p>{{pet.title}}</p>
+
+                    </a>
+
+                </div>
+
+            </content>
+
+        </side-menu>
+
+    </side-menus>
+
+</view>

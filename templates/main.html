@@ -1,4 +1,4 @@
-<view hide-back-button="true" hide-back-button="true">
+<view>
 
     <header-bar type="bar-positive" title="'Hanna Instruments'" animation="nav-title-slide-ios7" drag-content="true"></header-bar>
 
@@ -8,7 +8,7 @@
 
         <div class="list card">
 
-            <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" href="#product/{{pet.id}}">
+            <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" ng-href="#/product/{{pet.id}}">
 
                 <img src="img/{{pet.sku}}/thumb.png">
 
@@ -22,4 +22,4 @@
 
     </content>
 
-    </view
+</view>
