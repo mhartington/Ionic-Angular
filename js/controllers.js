@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-//Intro Controller
+//Intro View Controller
 .controller('IntroCtrl', function ($scope, $state) {
     // Called to navigate to the main app
     $scope.startApp = function () {
@@ -92,6 +92,7 @@ angular.module('starter.controllers', [])
     };
 })
 
+//Main View Controller
 .controller('IndexCtrl', function ($scope, PetService) {
     // "Pets" is a service returning mock data (services.js)
     $scope.pets = PetService.all();
@@ -99,6 +100,22 @@ angular.module('starter.controllers', [])
 
 })
 
+//Menu Controller
+.controller('MenuCtrl', function ($scope) {
+    $scope.toggleMenu = function () {
+        $scope.sideMenuController.toggleLeft();
+    };
+    $scope.enableBackButton = true;
+    $scope.leftButtons = [
+        {
+            type: 'button-clear',
+            content: '<i class="icon ion-navicon"></i>',
+            tap: $scope.toggleMenu
+  }
+];
+})
+
+//Menu Detail Controller
 .controller('DetailCtrl', function ($scope, $stateParams, PetService, $ionicActionSheet) {
 
     $scope.pet = PetService.get($stateParams.petsId);
@@ -112,38 +129,48 @@ angular.module('starter.controllers', [])
         // Show the action sheet
         $ionicActionSheet.show({
 
-            // The various non-destructive button choices
+
             buttons: [
                 {
-                    text: 'Manual'
-                },
- //        { text: 'See on Site' },
+                    text: 'Manual',
+                }
+                    ,
+ //                {
+ //                    text: 'See on Site'
+ //                },
       ],
 
 
 
-            // The text of the cancel button
+
             cancelText: 'Close',
 
-            // Called when the sheet is cancelled, either from triggering the
-            // cancel button, or tapping the backdrop, or using escape on the keyboard
+
             cancel: function () {},
 
-            // Called when one of the non-destructive buttons is clicked, with
-            // the index of the button that was clicked. Return
-            // "true" to tell the action sheet to close. Return false to not close.
+
             buttonClicked: function (index) {
                 if (index === 0) { // Manual Button
-                    window.open($scope.pet.manual, '_blank', 'transitionstyle=fliphorizontal');
+
+                    var location;
+                    var phoneModel = device.platform;
+                    if (phoneModel === 'Android') {
+                        location = '_system';
+                    } else if (phoneModel === 'iOS') {
+                        location = '_blank';
+
+                    } else {
+                        location = "_blank"
+                    }
+
+                    window.open($scope.pet.manual, location, 'transitionstyle=fliphorizontal');
                 } else if (index === 1) {
-                    alert('See on Site button clicked...');
+
                 }
 
                 return true;
             },
 
-            // Called when the destructive button is clicked. Return true to close the
-            // action sheet. False to keep it open
             destructiveButtonClicked: function () {
                 return true;
 
@@ -166,18 +193,4 @@ angular.module('starter.controllers', [])
 ];
 
     $scope.enableBackButton = true;
-})
-
-.controller('MenuCtrl', function ($scope) {
-    $scope.toggleMenu = function () {
-        $scope.sideMenuController.toggleLeft();
-    };
-    $scope.enableBackButton = true;
-    $scope.leftButtons = [
-        {
-            type: 'button-clear',
-            content: '<i class="icon ion-navicon"></i>',
-            tap: $scope.toggleMenu
-  }
-];
 });

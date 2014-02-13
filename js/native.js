@@ -10,19 +10,27 @@ $(document).on('deviceready', function () {
         console.log("No Connection");
     });
 
+    //    var string = device.platform;
+    //    console.log(string);
 
 });
 
- $(function () {
-        var networkState = navigator.connection.type;
-        if (networkState == "none") {
-            console.log("No Connection");
-            //NOTHING...
+$(function () {
 
-        } else {
-            app.initialize();
-            registerPushwoosh();
+    var networkState = navigator.connection.type;
 
-            console.log("Connected, Lets get pushing");
-        }
-    });
+    if (networkState == "none") {
+
+        console.log("No Connection");
+
+        //NOTHING...
+
+    } else {
+
+        app.initialize();
+
+        registerPushwoosh();
+
+        console.log("Connected, Lets get pushing");
+    }
+});
