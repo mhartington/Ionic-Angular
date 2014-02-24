@@ -49,33 +49,11 @@ angular.module('starter.directives', ['ionic.service.gesture'])
     };
 })
 
-.directive('noDragRight', ['$ionicGesture',
-    function ($ionicGesture) {
 
-        return {
-            restrict: 'A',
-            link: function ($scope, $element, $attr) {
-
-                $ionicGesture.on('dragright', function (e) {
-                    e.gesture.srcEvent.preventDefault();
-                }, $element);
-            }
-        };
-}])
-
-.directive('shrink', function($timeout) {
+//360 Rotator Directive
+.directive('MH-frosted', function ($timeout) {
     return {
-        restrict: 'A',
-        link: function($scope, $element, $attr) {
-            // Run in the next scope digest
-            $timeout(function() {
-                // Watch for changes to the x var which is a value between 0 and 275
-                $scope.$watch('sideMenuContentTranslateX', function(x) {
-                    if (x === 275) {
-                        $element[0].style.webkitTransform += ' scaleY(0.6) scaleX(0.6) translateX(-140px)';// skewY(-20deg)';
-                    }
-                });
-            });
-        }
+        restrict: 'E',
+        template: '<div class="fade-bar"></div>',
     };
 });

@@ -1,0 +1,23 @@
+<ion-view title="'Hanna Instruments'">
+
+	<ion-content has-header="true">
+
+		<img src="img/logo.svg" class="logo">
+
+		<div class="list">
+
+			<a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" href="#{{pet.id}}">
+
+				<img src="img/{{pet.sku}}/thumb.png">
+
+				<h3>{{pet.sku}}</h3>
+
+				<p>{{pet.title}}</p>
+
+			</a>
+
+		</div>
+
+	</ion-content>
+
+</ion-view>

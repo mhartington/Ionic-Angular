@@ -1,25 +1,42 @@
-<view>
+<ion-view>
 
-    <header-bar type="bar-positive" title="'Hanna Instruments'" animation="nav-title-slide-ios7" drag-content="true"></header-bar>
+	<ion-side-menus>
 
-    <content has-header="true" padding="true">
+		<fade-bar></fade-bar>
 
-        <img src="img/logo.svg" class="logo">
+		<ion-pane ion-side-menu-content id="nav-menu-pane">
 
-        <div class="list card">
+			<ion-nav-bar type="bar-positive" hide-back-button="true" animation="nav-title-slide-ios7"></ion-nav-bar>
 
-            <a ng-repeat="pet in pets | orderBy:'sku'" class="item item-thumbnail-left" ng-href="#/product/{{pet.id}}">
+			<ion-nav-view name="content" animation="slide-left-right"></ion-nav-view>
 
-                <img src="img/{{pet.sku}}/thumb.png">
+		</ion-pane>
 
-                <h3>{{pet.sku}}</h3>
+		<ion-side-menu side="left">
 
-                <p>{{pet.title}}</p>
+			<div class="bar bar-header bar-dark">
 
-            </a>
 
-        </div>
+			</div>
 
-    </content>
+			<ion-content has-header="true" class="dark">
 
-</view>
+				<div class="list" ng-controller="IndexCtrl">
+
+					<a ng-repeat="pet in pets | orderBy:'sku'" class="item" href="#{{pet.id}}" ng-click="toggleMenu()">
+
+						<h3>{{pet.sku}}</h3>
+
+						<p>{{pet.title}}</p>
+
+					</a>
+
+				</div>
+
+			</ion-content>
+
+		</ion-side-menu>
+
+	</ion-side-menus>
+
+</ion-view>

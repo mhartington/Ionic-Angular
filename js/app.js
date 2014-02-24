@@ -1,47 +1,53 @@
 angular.module('starter', ['ionic',
                            'starter.services',
                            'starter.controllers',
-                           'starter.directives',
+                           'starter.directives'
                           ])
 
 .config(function ($stateProvider, $urlRouterProvider, $sceProvider) {
 
-    $sceProvider.enabled(false);
+	$sceProvider.enabled(false);
 
-    $stateProvider
+	$stateProvider
 
-    //Full State
-    .state('intro', {
-        url: "/",
-        templateUrl: "templates/intro.html",
-        controller: 'IntroCtrl'
-    })
+	//Full State
+	.state('intro', {
+		url: "/",
+		templateUrl: "templates/intro.html",
+		controller: 'IntroCtrl'
+	})
 
-    //Full State
-    .state('main', {
-        url: "/main",
-        templateUrl: "templates/main.html",
-        controller: 'IndexCtrl'
-    })
 
-    //Abstract Menu State
-    .state('menu', {
-        url: "/product",
-        templateUrl: "templates/menu.html",
-        controller: 'MenuCtrl'
-    })
+	//Abstract Menu State
+	.state('main', {
+		abstract: 'true',
+		templateUrl: "templates/main.html",
+		controller: 'MenuCtrl'
+	})
 
-    //Nested Content State, NO ANIMATION
-    .state('menu.detail', {
-        url: "/:petsId",
-        views: {
-            'content': {
-                templateUrl: "templates/detail.html",
-                controller: 'DetailCtrl'
-            }
-        }
-    });
+	//Nested State
+	.state('main.home', {
+		url: "/products",
+		views: {
+			'content': {
+				templateUrl: "templates/list.html",
+				controller: 'IndexCtrl'
+			}
+		}
+	})
 
-    $urlRouterProvider.otherwise("/");
+
+	//Nested Content State, NO ANIMATION
+	.state('main.detail', {
+		url: "/:petsId",
+		views: {
+			'content': {
+				templateUrl: "templates/detail.html",
+				controller: 'DetailCtrl'
+			}
+		}
+	});
+
+	$urlRouterProvider.otherwise("/");
 
 });

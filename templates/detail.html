@@ -1,74 +1,74 @@
-<view title="pet.sku" left-buttons="leftButtons" right-buttons="rightButtons">
+<ion-view title="pet.sku" left-buttons="leftButtons" right-buttons="rightButtons">
 
-    <tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
+	<ion-tabs tabs-type="tabs-icon-top" tabs-style="tabs-light">
 
-        <tab title="{{page.id}}" icon="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
+		<ion-tab title="{{page.id}}" icon="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
 
-            <slide-box ng-if="page.type === 'slide'" does-continue="true">
+			<ion-slide-box ng-if="page.type === 'slide'">
 
-                <slide ng-repeat="slide in page.slides">
+				<ion-slide ng-repeat="slide in page.slides">
 
-                    <div class="wrapper has-tabs has-header">
+					<div class="wrapper has-tabs has-header">
 
-                        <div class="product">
+						<div class="product">
 
-                            <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
+							<img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
 
-                        </div>
+						</div>
 
-                        <div class="info">
+						<ion-content class="info" has-bouncing="true" padding="true">
 
-                            <p>{{slide.content}}</p>
+							<p>{{slide.content}}</p>
 
-                        </div>
+						</ion-content>
 
-                    </div>
+					</div>
 
-                </slide>
+				</ion-slide>
 
-            </slide-box>
+			</ion-slide-box>
 
-            <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
+			<div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
 
-                <div class="product" image-rotator>
+				<div class="product" image-rotator>
 
-                    <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
+					<img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
 
-                </div>
+				</div>
 
-                <div class="info">
+				<ion-content has-bouncing="true" padding="true" class="info">
 
-                    <p>{{page.content}}</p>
+					<p>{{page.content}}</p>
 
-                </div>
+				</ion-content>
 
-            </div>
+				
 
-            <div ng-if="page.type === 'video'">
+			</div>
 
-                <content has-header="true" has-tabs="true">
+			<div ng-if="page.type === 'video'">
 
-                    <h3 style="text-align:center;">{{pet.sku}}</h3>
+				<ion-content has-header="true" has-tabs="true" has-bouncing="true" padding="true"> 
+	
+					<div class="row">
 
-                    <div class="row">
+						<div class="col" style="max-width: 1200px;margin: auto;">
 
-                        <div class="col" style="max-width: 1200px;margin: auto;">
+							<div class='embed-container'>
 
-                            <div class='embed-container'>
+								<iframe type="text/html" src="{{page.src}}" frameborder="0" allowfullscreen></iframe>
 
-                                <iframe type="text/html" src="{{page.src}}" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
 
-                            </div>
-                        </div>
+					</div>
 
-                    </div>
+				</ion-content>
 
-                </content>
+			</div>
 
-            </div>
+		</ion-tab>
 
-        </tab>
+	</ion-tabs>
 
-    </tabs>
-
-</view>
+</ion-view>
