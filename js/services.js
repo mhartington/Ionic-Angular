@@ -415,7 +415,7 @@ angular.module('starter.services', [])
 			return pets;
 		},
 		get: function (petId) {
-			// Simple index lookup
+			
 			return pets[petId];
 		}
 	};

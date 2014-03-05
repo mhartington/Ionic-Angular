@@ -3,7 +3,6 @@ angular.module('starter', ['ionic',
                            'starter.controllers',
                            'starter.directives'
                           ])
-
 .config(function ($stateProvider, $urlRouterProvider, $sceProvider) {
 
 	$sceProvider.enabled(false);
@@ -17,6 +16,13 @@ angular.module('starter', ['ionic',
 		controller: 'IntroCtrl'
 	})
 
+	//Nested State
+	.state('home', {
+		url: "/products",
+		templateUrl: "templates/list.html",
+		controller: 'IndexCtrl'
+
+	})
 
 	//Abstract Menu State
 	.state('main', {
@@ -25,21 +31,10 @@ angular.module('starter', ['ionic',
 		controller: 'MenuCtrl'
 	})
 
-	//Nested State
-	.state('main.home', {
-		url: "/products",
-		views: {
-			'content': {
-				templateUrl: "templates/list.html",
-				controller: 'IndexCtrl'
-			}
-		}
-	})
-
 
 	//Nested Content State, NO ANIMATION
 	.state('main.detail', {
-		url: "/:petsId",
+		url: "/products/:petsId",
 		views: {
 			'content': {
 				templateUrl: "templates/detail.html",

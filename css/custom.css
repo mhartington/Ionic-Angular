@@ -1,3 +1,6 @@
+/*////////////////////*/
+/*Type Changes & Resets*/
+/*////////////////////*/
 h2,
 h3,
 h4,
@@ -13,10 +16,27 @@ a {
 	font-size: 16px;
 	letter-spacing: 1.5px;
 }
-.platform-ios7 h1.title {
-	font-size: 20px !important;
-	font-weight: 200 !important;
+.menu-content {
+	box-shadow: none;
+	padding-top: 1px;
 }
+
+/*////////////////////*/
+/*Some Android Resets*/
+/*Need to Verify Later*/
+/*////////////////////*/
+.view,
+.pane {
+	margin: 0px auto !important;
+	padding: auto !important;
+	top: 0;
+	bottom: 0;
+}
+
+
+/*////////////////////*/
+/*Dark Side Menu*/
+/*////////////////////*/
 .dark {
 	background-color: #3f4041;
 	color: #ffffff;
@@ -27,17 +47,28 @@ a {
 }
 .dark .item {
 	border: none;
-	border-top: 1px solid #616363;
-	border-bottom: 1px solid #333434;
+	border-top: 1px solid #464646;
+	border-bottom: 2px solid #333333;
+	padding: 15px !important;
+	max-height: none;
 }
 .dark .item:first-child {
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.dark .item:last-child {
+	border-bottom: 1px solid #333333;
 }
 .dark h3,
 .dark p {
 	color: #F0F1F1;
 }
+
+
+/*////////////////////*/
+/*Basic 2 Coloum set up*/
+/*////////////////////*/
 .product {
+	opacity: 0;
 	overflow: hidden;
 	text-align: center;
 	display: -webkit-box;
@@ -64,8 +95,7 @@ a {
 	-ms-flex-align: center;
 	align-items: center;
 }
-.child,
-iframe {
+.child {
 	margin: auto;
 	display: block;
 	max-height: 100%;
@@ -111,8 +141,28 @@ iframe {
 	position: relative;
 	text-align: justify;
 }
-/* Landscape */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16/9 ratio */
+	padding-top: 30px;
+	/* IE6 workaround*/
+	height: 0;
+	overflow: hidden;
+}
+.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
+
+
+/*////////////////////*/
+/*Media Query Goodness*/
+/*////////////////////*/
 @media only screen and (orientation: landscape) {
 	/* Landscape styles */
 	.wrapper {
@@ -146,8 +196,6 @@ iframe {
 		height: 100% !important;
 	}
 }
-/* PORTRAIT */
-
 @media only screen and (orientation: portrait) {
 	/* Portrait styles */
 	.wrapper {
@@ -185,6 +233,11 @@ iframe {
 		flex-direction: column;
 	}
 }
+
+
+/*////////////////////*/
+/*Intro View Styles*/
+/*////////////////////*/
 .slider {
 	height: 100%;
 }
@@ -208,6 +261,12 @@ iframe {
 	top: 45px;
 	bottom: initial;
 }
+
+
+
+/*////////////////////*/
+/*IOS 7 Specific */
+/*////////////////////*/
 .platform-ios7 .slider-pager {
 	top: 65px;
 	bottom: initial;
@@ -222,25 +281,21 @@ iframe {
 	position: absolute;
 	top: 0px;
 }
+.platform-ios7 .dark {
+	padding-top: 20px;
+}
+.platform-ios7 h1.title {
+	font-size: 20px !important;
+	font-weight: 200 !important;
+}
+
+
+/*////////////////////*/
+/*Logo, Active Tab*/
+/*////////////////////*/
 .tab-item.active,
 .tab-item:active {
 	color: #006db6 !important;
-}
-.embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	/* 16/9 ratio */
-	padding-top: 30px;
-	/* IE6 workaround*/
-	height: 0;
-	overflow: hidden;
-}
-.embed-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }
 .logo {
 	width: 90%;
@@ -249,5 +304,6 @@ iframe {
 	margin: auto
 }
 ::-webkit-scrollbar {
+
 	display: none;
 }

@@ -41,6 +41,26 @@ angular.module('starter.directives', ['ionic.service.gesture'])
 
             $timeout(function () {
                 $element.j360();
+						
+            });
+
+
+
+        }
+    };
+})
+
+
+//360 Rotator Directive
+.directive('itemHref', function ($timeout) {
+    return {
+        restrict: 'A',
+        link: function ($scope, $element, $attr, $location) {
+
+            $timeout(function () {
+				var $linkHref=$element.attr('href');
+				var $thisURL = $scope.$location;
+						
             });
 
 

@@ -1,61 +1,38 @@
-var appHelpers = {
-
-	disableNavMenu: function ($scope) {
-		// disable nav from being draggable
-		angular.element(document.querySelector('#nav-menu-pane')).scope().dragContent = false;
-
-		// chainability
-		return this;
-	},
-
-	enableNavMenu: function ($scope) {
-		// disable nav from being draggable
-		angular.element(document.querySelector('#nav-menu-pane')).scope().dragContent = true;
-
-		// chainability
-		return this;
-	}
-
-};
-
 angular.module('starter.controllers', [])
 
 //Intro View Controller
 .controller('IntroCtrl', function ($scope, $state) {
-	// Called to navigate to the main app
-	$scope.startApp = function () {
-		$state.go('main.home');
+	console.log('Start Intro Controller');
 
-		// Set a flag that we finished the tutorial
-		// Set a flag that we finished the tutorial
-		window.localStorage['didTutorial'] = true;
+	$scope.startApp = function () {
+		$state.go('home');
+		window.localStorage.didTutorial = true;
 	};
 
-	//No this is silly
-	// Check if the user already did the tutorial and skip it if so
-	if (window.localStorage['didTutorial'] === "true") {
-		console.log('Skip intro');
-		$scope.startApp();
+	if (window.localStorage.didTutorial == "true") {
+		$scope.startApp(function () {});
+
+
+	} else {
+		console.log('Need to do into');
+//		navigator.splashscreen.hide();
+
 	}
-	// Move to the next slide
+
 	$scope.next = function () {
 		$scope.$broadcast('slideBox.nextSlide');
 	};
 
-
-	// Our initial right buttons
 	var rightButtons = [
 		{
 			content: 'Next',
 			type: 'button button-clear',
 			tap: function (e) {
-				// Go to the next slide on tap
 				$scope.next();
 			}
     }
   ];
 
-	// Our initial left buttons
 	var leftButtons = [
 		{
 			content: 'Skip',
@@ -101,7 +78,7 @@ angular.module('starter.controllers', [])
 					content: 'Start',
 					type: 'button button-clear',
 					tap: function (e) {
-						$scope.startApp();
+						startApp();
 					}
         }
       ];
@@ -117,10 +94,12 @@ angular.module('starter.controllers', [])
 	// "Pets" is a service returning mock data (services.js)
 	$scope.pets = PetService.all();
 	$scope.enableBackButton = false;
-	// update nav menu
-	appHelpers.disableNavMenu($scope);
 
+	setTimeout(function () {
+		navigator.splashscreen.hide();
+	}, 1000);
 })
+
 
 //Menu Controller
 .controller('MenuCtrl', function ($scope) {
@@ -128,7 +107,9 @@ angular.module('starter.controllers', [])
 	$scope.toggleMenu = function () {
 		$scope.sideMenuController.toggleLeft();
 	};
-	$scope.enableBackButton = true;
+
+	$scope.enableBackButton = false;
+
 	$scope.leftButtons = [
 		{
 			type: 'button-clear',
@@ -136,19 +117,13 @@ angular.module('starter.controllers', [])
 			tap: $scope.toggleMenu
   }
 ];
+
 })
 
 //Menu Detail Controller
 .controller('DetailCtrl', function ($scope, $stateParams, PetService, $ionicActionSheet) {
-	// update nav menu
-	appHelpers.enableNavMenu($scope);
-
 
 	$scope.pet = PetService.get($stateParams.petsId);
-
-	$scope.toggleMenu = function () {
-		$scope.sideMenuController.toggleLeft();
-	};
 
 	$scope.show = function () {
 
@@ -204,8 +179,6 @@ angular.module('starter.controllers', [])
 
 	};
 
-
-
 	$scope.rightButtons = [
 		{
 			type: 'button-clear',
@@ -217,5 +190,5 @@ angular.module('starter.controllers', [])
           }
 ];
 
-	$scope.enableBackButton = true;
+	$scope.enableBackButton = false;
 });

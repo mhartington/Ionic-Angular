@@ -4,13 +4,13 @@
 
 		<ion-tab title="{{page.id}}" icon="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
 
-			<ion-slide-box ng-if="page.type === 'slide'">
+			<ion-slide-box ng-if="page.type === 'slide'" >
 
 				<ion-slide ng-repeat="slide in page.slides">
 
 					<div class="wrapper has-tabs has-header">
 
-						<div class="product">
+						<div class="product" image-rotator>
 
 							<img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
 
@@ -42,14 +42,14 @@
 
 				</ion-content>
 
-				
+
 
 			</div>
 
 			<div ng-if="page.type === 'video'">
 
-				<ion-content has-header="true" has-tabs="true" has-bouncing="true" padding="true"> 
-	
+				<ion-content has-header="true" has-tabs="true" has-bouncing="true" padding="true">
+
 					<div class="row">
 
 						<div class="col" style="max-width: 1200px;margin: auto;">
@@ -59,6 +59,7 @@
 								<iframe type="text/html" src="{{page.src}}" frameborder="0" allowfullscreen></iframe>
 
 							</div>
+							
 						</div>
 
 					</div>
