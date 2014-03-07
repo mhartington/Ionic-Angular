@@ -6,9 +6,9 @@
 
 		<img src="img/logo.svg" class="logo">
 
-		<div class="list">
+		<ion-list>
 
-			<a ng-repeat="pet in pets | orderBy:'sku'" ui-sref="main.detail({petsId: pet.id })" class="item item-thumbnail-left">
+			<ion-item ng-repeat="pet in pets | orderBy:'sku'" ui-sref="main.detail({petsId: pet.id })" class="item-thumbnail-left">
 
 				<img src="img/{{pet.sku}}/thumb.png">
 
@@ -16,9 +16,9 @@
 
 				<p>{{pet.title}}</p>
 
-			</a>
+			</ion-item>
 
-		</div>
+		</ion-list>
 
 	</ion-content>
 

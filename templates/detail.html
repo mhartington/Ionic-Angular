@@ -4,7 +4,7 @@
 
 		<ion-tab title="{{page.id}}" icon="{{page.icon}}" ng-repeat="page in pet.pages | orderBy:orderProp">
 
-			<ion-slide-box ng-if="page.type === 'slide'" >
+			<ion-slide-box ng-if="page.type === 'slide'">
 
 				<ion-slide ng-repeat="slide in page.slides">
 
@@ -32,7 +32,7 @@
 
 				<div class="product" image-rotator>
 
-					<img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
+					<img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png" style="z-index:3;">
 
 				</div>
 
@@ -59,7 +59,7 @@
 								<iframe type="text/html" src="{{page.src}}" frameborder="0" allowfullscreen></iframe>
 
 							</div>
-							
+
 						</div>
 
 					</div>

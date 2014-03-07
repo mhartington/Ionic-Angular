@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<widget id="com.hanna-inst.ios" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>ProductDemo</name>
+	<description>
+		A sample Apache Cordova application that responds to the deviceready event.
+	</description>
+	<author email="dev@cordova.apache.org" href="http://cordova.io">
+		Apache Cordova Team
+	</author>
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="1000" />
+	<content src="index.html" />
+	<access origin="*" />
+	<preference name="AutoHideSplashScreen" value="false" />
+</widget>

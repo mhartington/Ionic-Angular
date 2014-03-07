@@ -16,10 +16,7 @@ a {
 	font-size: 16px;
 	letter-spacing: 1.5px;
 }
-.menu-content {
-	box-shadow: none;
-	padding-top: 1px;
-}
+
 
 /*////////////////////*/
 /*Some Android Resets*/
@@ -58,9 +55,14 @@ a {
 .dark .item:last-child {
 	border-bottom: 1px solid #333333;
 }
+.dark h2,
 .dark h3,
 .dark p {
 	color: #F0F1F1;
+}
+
+.dark-head{
+	text-decoration: none;
 }
 
 
@@ -68,6 +70,9 @@ a {
 /*Basic 2 Coloum set up*/
 /*////////////////////*/
 .product {
+	position: absolute;
+	top: 0;
+	left: 0;
 	opacity: 0;
 	overflow: hidden;
 	text-align: center;
@@ -138,7 +143,6 @@ a {
 	position: absolute;
 }
 .info {
-	position: relative;
 	text-align: justify;
 }
 .embed-container {
@@ -178,6 +182,7 @@ a {
 		height: 100%;
 	}
 	.info {
+		left: 55%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -214,7 +219,7 @@ a {
 		border-bottom: thin solid #ddd;
 	}
 	.info {
-		height: 35% !important;
+		top:65% !important;
 		width: 100% !important;
 		margin: auto !important;
 		display: -webkit-box;
@@ -282,7 +287,7 @@ a {
 	top: 0px;
 }
 .platform-ios7 .dark {
-	padding-top: 20px;
+/*	padding-top: 20px;*/
 }
 .platform-ios7 h1.title {
 	font-size: 20px !important;

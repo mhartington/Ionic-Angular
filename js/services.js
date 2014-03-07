@@ -206,7 +206,7 @@ angular.module('starter.services', [])
 					"type": "normal",
 					"id": "360",
 					"icon": "icon icon-360",
-					"imgs": ['01', '02', '03', '04', '05', '06', '08', '09', '10', '11', '12', '13', '14', '15', '16'],
+					"imgs": ['16','01', '02', '03', '04', '05', '06', '08', '09', '10', '11', '12', '13', '14', '15'],
 					"content": "HI4522 is a research grade, benchtop instrument that feature 8 measurement ranges: pH, ORP (Oxidation Reduction Potential), ISE, conductivity, resistivity, TDS, salinity and temperature. This instrument incorporates dual channels with a separate temperature input and support the external reference electrodes required by half cell pH and ISE sensors. The user interface is customizable and capable of displaying two channels at the same time, showing the measurements in various modes: basic measurement with or without GLP information, graph or logging data.This instrument offers multi-language support and contextual help is available through a dedicated Help key. Clear tutorial messages and directions are available on-screen to quickly and easily guide users through all measurement and calibration procedures to ensure measurements and calibrations are performed properly."
 				},
 
@@ -236,7 +236,7 @@ angular.module('starter.services', [])
 				"Data": {
 					"type": "normal",
 					"id": "Data",
-					"icon": "icon icon-button",
+					"icon": "icon icon-data",
 					"imgs": ['data'],
 					"content": "The built-in USB interface and RS232 input allows log data to be transferred to the HI92000 PC software."
 				},
@@ -299,7 +299,7 @@ angular.module('starter.services', [])
 				"Data": {
 					"type": "normal",
 					"id": "Data",
-					"icon": "icon icon-button",
+					"icon": "icon icon-data",
 					"imgs": ['data'],
 					"content": "The HI84530 has two USB inputs allow for connecting the meter to a PC while the other lets the user store logging data on an external flash drive."
 				},
@@ -415,7 +415,7 @@ angular.module('starter.services', [])
 			return pets;
 		},
 		get: function (petId) {
-			
+
 			return pets[petId];
 		}
 	};
