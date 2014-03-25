@@ -1,0 +1,20 @@
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-gen/com/hanna_inst/ios/R.java \
+ : /Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable/splash.9.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-hdpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-ldpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-mdpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-xxhdpi/ic_action_next_item.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-xxhdpi/ic_action_previous_item.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/drawable-xxhdpi/ic_action_remove.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/values/strings.xml \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/res/xml/config.xml \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable/splash.9.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_next_item.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_previous_item.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_remove.png \
+/Users/gcollins/Desktop/ProductDemo/platforms/android/ant-build/AndroidManifest.xml \

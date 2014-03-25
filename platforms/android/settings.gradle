@@ -1,0 +1,2 @@
+include ':productDemoCordovaLib'
+include ':productDemo'

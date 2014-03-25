@@ -1,0 +1,85 @@
+<ion-view title="Welcome">
+
+  <ion-nav-bar title="Welcome" type="bar-positive" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
+
+    <ion-nav-buttons side="left">
+      <button class="button button-positive button-clear " ng-click="startApp()" ng-if="!slideIndex">
+        Skip Intro
+      </button>
+      <button class="button button-positive button-clear " ng-click="previous()" ng-if="slideIndex > 0">
+        Previous Slide
+      </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button button-positive button-clear " ng-click="next()" ng-if="slideIndex != 2">
+        Next
+      </button>
+      <button class="button button-positive button-clear " ng-click="startApp()" ng-if="slideIndex == 2">
+        Lets Start
+      </button>
+    </ion-nav-buttons>
+
+
+  </ion-nav-bar>
+
+
+
+  <ion-slide-box on-slide-changed="slideChanged(index)">
+
+    <ion-slide>
+
+      <h1>Welcome</h1>
+
+      <div class="logo">
+
+        <img src="img/logo.svg" class="logo">
+
+      </div>
+
+      <p>This interactie demo lets you learn
+        <br>more about some of key products from
+        <br>Hanna Instruments</p>
+
+
+    </ion-slide>
+
+    <ion-slide>
+
+
+
+      <h1>Complete Detail</h1>
+
+      <div id="list">
+
+        <p>Here you can:</p>
+
+        <ul>
+
+          <li>See each product in 360&deg;</li>
+
+          <li>View important features</li>
+
+          <li>Link directly to manuals, videos, and other online assets</li>
+
+        </ul>
+
+      </div>
+
+    </ion-slide>
+
+    <ion-slide>
+
+
+      <h1>Ready?</h1>
+
+      <br>
+
+      <br>
+
+      <a class="button icon-right ion-checkmark  button-positive" ng-click="startApp()">Let's Start</a>
+
+    </ion-slide>
+
+  </ion-slide-box>
+
+</ion-view>

@@ -1,0 +1,84 @@
+<ion-view title="{{pet.sku}}" left-buttons="leftButtons" right-buttons="rightButtons">
+
+     <ion-nav-buttons side="left">
+          <button class="button-clear button-icon icon ion-navicon white " ng-click="toggleMenu()"></button>
+     </ion-nav-buttons>
+
+     <ion-nav-buttons side="right">
+          <button class="button-clear button-icon icon ion-ios7-information-outline white " ng-click="show()"></button>
+     </ion-nav-buttons>
+     
+     
+     <ion-tabs tabs-type="tabs-icon-top" class="tabs-light" animation="fade-in-out">
+
+          <ion-tab title="{{page.id}}" icon-off="{{page.icon}}" icon-on="{{page.icon}}-active" ng-repeat="page in pet.pages | orderBy:orderProp">
+
+               <ion-slide-box ng-if="page.type === 'slide'">
+
+                    <ion-slide ng-repeat="slide in page.slides">
+
+                         <div class="wrapper has-tabs has-header">
+
+                              <div class="product">
+
+                                   <img class="child" ng-src="img/{{pet.sku}}/{{slide.img}}.png">
+
+                              </div>
+
+                              <ion-content class="info padding" has-bouncing="true">
+
+                                   <p>{{slide.content}}</p>
+
+                              </ion-content>
+
+                         </div>
+
+                    </ion-slide>
+
+               </ion-slide-box>
+
+               <div ng-if="page.type === 'normal'" class="wrapper has-tabs has-header">
+
+                    <div class="product" image-rotator>
+
+                         <img ng-repeat="img in page.imgs" class="child" ng-src="img/{{pet.sku}}/{{img}}.png">
+
+                    </div>
+
+                    <ion-content has-bouncing="true" class="info padding">
+
+                         <p>{{page.content}}</p>
+
+                    </ion-content>
+
+
+
+               </div>
+
+               <div ng-if="page.type === 'video'">
+
+                    <ion-content has-header="true" has-tabs="true" has-bouncing="true" padding="true">
+
+                         <div class="row">
+
+                              <div class="col" style="max-width: 1200px;margin: auto;">
+
+                                   <div class='embed-container'>
+
+                                        <iframe type="text/html" src="{{page.src}}" frameborder="0" allowfullscreen></iframe>
+
+                                   </div>
+
+                              </div>
+
+                         </div>
+
+                    </ion-content>
+
+               </div>
+
+          </ion-tab>
+
+     </ion-tabs>
+
+</ion-view>

@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets" >
+            <file
+                name="_where-is-www.txt"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/_where-is-www.txt" />
+            <file
+                name="www/cordova.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/cordova.js" />
+            <file
+                name="www/cordova_plugins.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/cordova_plugins.js" />
+            <file
+                name="www/css/custom.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/css/custom.css" />
+            <file
+                name="www/css/custom.min.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/css/custom.min.css" />
+            <file
+                name="www/fontcustom/fontcustom-preview.html"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/fontcustom/fontcustom-preview.html" />
+            <file
+                name="www/fontcustom/fontcustom.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/fontcustom/fontcustom.css" />
+            <file
+                name="www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.eot"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.eot" />
+            <file
+                name="www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.svg"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.svg" />
+            <file
+                name="www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.ttf"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.ttf" />
+            <file
+                name="www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.woff"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/fontcustom/fontcustom_8b5f901eca662141c38814c51b34660d.woff" />
+            <file
+                name="www/img/edge/01.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/01.png" />
+            <file
+                name="www/img/edge/02.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/02.png" />
+            <file
+                name="www/img/edge/03.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/03.png" />
+            <file
+                name="www/img/edge/04.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/04.png" />
+            <file
+                name="www/img/edge/05.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/05.png" />
+            <file
+                name="www/img/edge/06.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/06.png" />
+            <file
+                name="www/img/edge/07.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/07.png" />
+            <file
+                name="www/img/edge/08.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/08.png" />
+            <file
+                name="www/img/edge/09.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/09.png" />
+            <file
+                name="www/img/edge/10.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/10.png" />
+            <file
+                name="www/img/edge/11.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/11.png" />
+            <file
+                name="www/img/edge/12.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/12.png" />
+            <file
+                name="www/img/edge/13.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/13.png" />
+            <file
+                name="www/img/edge/14.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/14.png" />
+            <file
+                name="www/img/edge/15.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/15.png" />
+            <file
+                name="www/img/edge/16.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/16.png" />
+            <file
+                name="www/img/edge/17.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/17.png" />
+            <file
+                name="www/img/edge/18.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/18.png" />
+            <file
+                name="www/img/edge/19.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/19.png" />
+            <file
+                name="www/img/edge/20.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/20.png" />
+            <file
+                name="www/img/edge/21.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/21.png" />
+            <file
+                name="www/img/edge/22.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/22.png" />
+            <file
+                name="www/img/edge/23.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/23.png" />
+            <file
+                name="www/img/edge/24.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/24.png" />
+            <file
+                name="www/img/edge/25.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/25.png" />
+            <file
+                name="www/img/edge/26.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/26.png" />
+            <file
+                name="www/img/edge/27.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/27.png" />
+            <file
+                name="www/img/edge/28.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/28.png" />
+            <file
+                name="www/img/edge/29.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/29.png" />
+            <file
+                name="www/img/edge/30.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/30.png" />
+            <file
+                name="www/img/edge/31.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/31.png" />
+            <file
+                name="www/img/edge/32.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/32.png" />
+            <file
+                name="www/img/edge/33.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/33.png" />
+            <file
+                name="www/img/edge/34.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/34.png" />
+            <file
+                name="www/img/edge/35.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/35.png" />
+            <file
+                name="www/img/edge/36.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/36.png" />
+            <file
+                name="www/img/edge/37.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/37.png" />
+            <file
+                name="www/img/edge/38.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/38.png" />
+            <file
+                name="www/img/edge/39.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/39.png" />
+            <file
+                name="www/img/edge/40.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/40.png" />
+            <file
+                name="www/img/edge/41.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/41.png" />
+            <file
+                name="www/img/edge/buttons.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/buttons.png" />
+            <file
+                name="www/img/edge/cal.gif"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/cal.gif" />
+            <file
+                name="www/img/edge/charger.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/charger.png" />
+            <file
+                name="www/img/edge/cradle.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/cradle.png" />
+            <file
+                name="www/img/edge/edge.svg"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/edge.svg" />
+            <file
+                name="www/img/edge/electrode.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/electrode.png" />
+            <file
+                name="www/img/edge/light.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/light.png" />
+            <file
+                name="www/img/edge/probe.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/probe.png" />
+            <file
+                name="www/img/edge/screen.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/screen.png" />
+            <file
+                name="www/img/edge/text.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/text.png" />
+            <file
+                name="www/img/edge/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/thumb.png" />
+            <file
+                name="www/img/edge/usb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/edge/usb.png" />
+            <file
+                name="www/img/HI4522/01.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/01.png" />
+            <file
+                name="www/img/HI4522/02.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/02.png" />
+            <file
+                name="www/img/HI4522/03.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/03.png" />
+            <file
+                name="www/img/HI4522/04.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/04.png" />
+            <file
+                name="www/img/HI4522/05.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/05.png" />
+            <file
+                name="www/img/HI4522/06.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/06.png" />
+            <file
+                name="www/img/HI4522/07.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/07.png" />
+            <file
+                name="www/img/HI4522/08.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/08.png" />
+            <file
+                name="www/img/HI4522/09.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/09.png" />
+            <file
+                name="www/img/HI4522/10.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/10.png" />
+            <file
+                name="www/img/HI4522/11.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/11.png" />
+            <file
+                name="www/img/HI4522/12.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/12.png" />
+            <file
+                name="www/img/HI4522/13.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/13.png" />
+            <file
+                name="www/img/HI4522/14.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/14.png" />
+            <file
+                name="www/img/HI4522/15.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/15.png" />
+            <file
+                name="www/img/HI4522/16.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/16.png" />
+            <file
+                name="www/img/HI4522/buttons.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/buttons.png" />
+            <file
+                name="www/img/HI4522/channel.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/channel.png" />
+            <file
+                name="www/img/HI4522/data.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/data.png" />
+            <file
+                name="www/img/HI4522/glp.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/glp.png" />
+            <file
+                name="www/img/HI4522/io.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/io.png" />
+            <file
+                name="www/img/HI4522/log.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/log.png" />
+            <file
+                name="www/img/HI4522/screen.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/screen.png" />
+            <file
+                name="www/img/HI4522/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI4522/thumb.png" />
+            <file
+                name="www/img/HI84530/01.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/01.png" />
+            <file
+                name="www/img/HI84530/02.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/02.png" />
+            <file
+                name="www/img/HI84530/03.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/03.png" />
+            <file
+                name="www/img/HI84530/04.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/04.png" />
+            <file
+                name="www/img/HI84530/05.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/05.png" />
+            <file
+                name="www/img/HI84530/06.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/06.png" />
+            <file
+                name="www/img/HI84530/07.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/07.png" />
+            <file
+                name="www/img/HI84530/08.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/08.png" />
+            <file
+                name="www/img/HI84530/09.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/09.png" />
+            <file
+                name="www/img/HI84530/10.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/10.png" />
+            <file
+                name="www/img/HI84530/11.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/11.png" />
+            <file
+                name="www/img/HI84530/12.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/12.png" />
+            <file
+                name="www/img/HI84530/13.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/13.png" />
+            <file
+                name="www/img/HI84530/14.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/14.png" />
+            <file
+                name="www/img/HI84530/15.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/15.png" />
+            <file
+                name="www/img/HI84530/16.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/16.png" />
+            <file
+                name="www/img/HI84530/17.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/17.png" />
+            <file
+                name="www/img/HI84530/18.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/18.png" />
+            <file
+                name="www/img/HI84530/19.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/19.png" />
+            <file
+                name="www/img/HI84530/buttons.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/buttons.png" />
+            <file
+                name="www/img/HI84530/cover.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/cover.png" />
+            <file
+                name="www/img/HI84530/data.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/data.png" />
+            <file
+                name="www/img/HI84530/io.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/io.png" />
+            <file
+                name="www/img/HI84530/log.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/log.png" />
+            <file
+                name="www/img/HI84530/pump.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/pump.png" />
+            <file
+                name="www/img/HI84530/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI84530/thumb.png" />
+            <file
+                name="www/img/HI902/01.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/01.png" />
+            <file
+                name="www/img/HI902/02.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/02.png" />
+            <file
+                name="www/img/HI902/03.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/03.png" />
+            <file
+                name="www/img/HI902/04.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/04.png" />
+            <file
+                name="www/img/HI902/05.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/05.png" />
+            <file
+                name="www/img/HI902/06.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/06.png" />
+            <file
+                name="www/img/HI902/07.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/07.png" />
+            <file
+                name="www/img/HI902/08.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/08.png" />
+            <file
+                name="www/img/HI902/09.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/09.png" />
+            <file
+                name="www/img/HI902/10.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/10.png" />
+            <file
+                name="www/img/HI902/11.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/11.png" />
+            <file
+                name="www/img/HI902/12.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/12.png" />
+            <file
+                name="www/img/HI902/13.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/13.png" />
+            <file
+                name="www/img/HI902/14.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/14.png" />
+            <file
+                name="www/img/HI902/15.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/15.png" />
+            <file
+                name="www/img/HI902/16.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/16.png" />
+            <file
+                name="www/img/HI902/17.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/17.png" />
+            <file
+                name="www/img/HI902/18.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/18.png" />
+            <file
+                name="www/img/HI902/902-analog.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/902-analog.png" />
+            <file
+                name="www/img/HI902/902-connect.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/902-connect.png" />
+            <file
+                name="www/img/HI902/902-power.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/902-power.png" />
+            <file
+                name="www/img/HI902/902BACK.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/902BACK.png" />
+            <file
+                name="www/img/HI902/burettes.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/burettes.png" />
+            <file
+                name="www/img/HI902/buttons.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/buttons.png" />
+            <file
+                name="www/img/HI902/collar.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/collar.png" />
+            <file
+                name="www/img/HI902/Exchangeable-Burette-System.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/Exchangeable-Burette-System.png" />
+            <file
+                name="www/img/HI902/io.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/io.png" />
+            <file
+                name="www/img/HI902/lcd.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/lcd.png" />
+            <file
+                name="www/img/HI902/positioning-Collar.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/positioning-Collar.png" />
+            <file
+                name="www/img/HI902/screen.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/screen.png" />
+            <file
+                name="www/img/HI902/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/thumb.png" />
+            <file
+                name="www/img/HI902/usb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI902/usb.png" />
+            <file
+                name="www/img/HI903/01.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/01.png" />
+            <file
+                name="www/img/HI903/02.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/02.png" />
+            <file
+                name="www/img/HI903/03.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/03.png" />
+            <file
+                name="www/img/HI903/04.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/04.png" />
+            <file
+                name="www/img/HI903/05.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/05.png" />
+            <file
+                name="www/img/HI903/06.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/06.png" />
+            <file
+                name="www/img/HI903/07.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/07.png" />
+            <file
+                name="www/img/HI903/08.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/08.png" />
+            <file
+                name="www/img/HI903/09.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/09.png" />
+            <file
+                name="www/img/HI903/10.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/10.png" />
+            <file
+                name="www/img/HI903/11.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/11.png" />
+            <file
+                name="www/img/HI903/12.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/12.png" />
+            <file
+                name="www/img/HI903/13.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/13.png" />
+            <file
+                name="www/img/HI903/14.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/14.png" />
+            <file
+                name="www/img/HI903/15.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/15.png" />
+            <file
+                name="www/img/HI903/16.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/16.png" />
+            <file
+                name="www/img/HI903/17.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/17.png" />
+            <file
+                name="www/img/HI903/back.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/back.png" />
+            <file
+                name="www/img/HI903/burret.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/burret.png" />
+            <file
+                name="www/img/HI903/buttons.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/buttons.png" />
+            <file
+                name="www/img/HI903/screen.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/screen.png" />
+            <file
+                name="www/img/HI903/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/thumb.png" />
+            <file
+                name="www/img/HI903/usb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/usb.png" />
+            <file
+                name="www/img/HI903/vessel.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI903/vessel.png" />
+            <file
+                name="www/img/HI9829/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI9829/thumb.png" />
+            <file
+                name="www/img/HI98703/01.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/01.png" />
+            <file
+                name="www/img/HI98703/02.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/02.png" />
+            <file
+                name="www/img/HI98703/03.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/03.png" />
+            <file
+                name="www/img/HI98703/04.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/04.png" />
+            <file
+                name="www/img/HI98703/05.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/05.png" />
+            <file
+                name="www/img/HI98703/06.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/06.png" />
+            <file
+                name="www/img/HI98703/07.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/07.png" />
+            <file
+                name="www/img/HI98703/08.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/08.png" />
+            <file
+                name="www/img/HI98703/09.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/09.png" />
+            <file
+                name="www/img/HI98703/10.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/10.png" />
+            <file
+                name="www/img/HI98703/11.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/11.png" />
+            <file
+                name="www/img/HI98703/12.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/12.png" />
+            <file
+                name="www/img/HI98703/13.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/13.png" />
+            <file
+                name="www/img/HI98703/14.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/14.png" />
+            <file
+                name="www/img/HI98703/15.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/15.png" />
+            <file
+                name="www/img/HI98703/16.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/16.png" />
+            <file
+                name="www/img/HI98703/17.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/17.png" />
+            <file
+                name="www/img/HI98703/18.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/18.png" />
+            <file
+                name="www/img/HI98703/buttons.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/buttons.png" />
+            <file
+                name="www/img/HI98703/cuvette.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/cuvette.png" />
+            <file
+                name="www/img/HI98703/glp.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/glp.png" />
+            <file
+                name="www/img/HI98703/io.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/io.png" />
+            <file
+                name="www/img/HI98703/tag.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/tag.png" />
+            <file
+                name="www/img/HI98703/thumb.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/HI98703/thumb.png" />
+            <file
+                name="www/img/logo.svg"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/logo.svg" />
+            <file
+                name="www/img/poster.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/img/poster.png" />
+            <file
+                name="www/index.html"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/index.html" />
+            <file
+                name="www/js/app.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/app.js" />
+            <file
+                name="www/js/app.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/app.min.js" />
+            <file
+                name="www/js/controllers.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/controllers.js" />
+            <file
+                name="www/js/controllers.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/controllers.min.js" />
+            <file
+                name="www/js/custom.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/custom.js" />
+            <file
+                name="www/js/custom.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/custom.min.js" />
+            <file
+                name="www/js/directives.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/directives.js" />
+            <file
+                name="www/js/directives.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/directives.min.js" />
+            <file
+                name="www/js/index.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/index.js" />
+            <file
+                name="www/js/index.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/index.min.js" />
+            <file
+                name="www/js/native.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/native.js" />
+            <file
+                name="www/js/native.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/native.min.js" />
+            <file
+                name="www/js/services.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/services.js" />
+            <file
+                name="www/js/services.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/js/services.min.js" />
+            <file
+                name="www/lib/bindonce.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/bindonce.min.js" />
+            <file
+                name="www/lib/css/ionic.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/css/ionic.css" />
+            <file
+                name="www/lib/css/ionic.min.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/css/ionic.min.css" />
+            <file
+                name="www/lib/fonts/ionicons.eot"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/fonts/ionicons.eot" />
+            <file
+                name="www/lib/fonts/ionicons.svg"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/fonts/ionicons.svg" />
+            <file
+                name="www/lib/fonts/ionicons.ttf"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/fonts/ionicons.ttf" />
+            <file
+                name="www/lib/fonts/ionicons.woff"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/fonts/ionicons.woff" />
+            <file
+                name="www/lib/frosted.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/frosted.css" />
+            <file
+                name="www/lib/frosted.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/frosted.js" />
+            <file
+                name="www/lib/jquery.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/jquery.min.js" />
+            <file
+                name="www/lib/js/angular/angular-animate.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-animate.js" />
+            <file
+                name="www/lib/js/angular/angular-animate.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-animate.min.js" />
+            <file
+                name="www/lib/js/angular/angular-animate.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-animate.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular-cookies.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-cookies.js" />
+            <file
+                name="www/lib/js/angular/angular-cookies.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-cookies.min.js" />
+            <file
+                name="www/lib/js/angular/angular-cookies.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-cookies.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular-csp.css"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-csp.css" />
+            <file
+                name="www/lib/js/angular/angular-loader.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-loader.js" />
+            <file
+                name="www/lib/js/angular/angular-loader.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-loader.min.js" />
+            <file
+                name="www/lib/js/angular/angular-loader.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-loader.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular-mocks.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-mocks.js" />
+            <file
+                name="www/lib/js/angular/angular-resource.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-resource.js" />
+            <file
+                name="www/lib/js/angular/angular-resource.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-resource.min.js" />
+            <file
+                name="www/lib/js/angular/angular-resource.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-resource.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular-route.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-route.js" />
+            <file
+                name="www/lib/js/angular/angular-route.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-route.min.js" />
+            <file
+                name="www/lib/js/angular/angular-route.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-route.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular-sanitize.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-sanitize.js" />
+            <file
+                name="www/lib/js/angular/angular-sanitize.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-sanitize.min.js" />
+            <file
+                name="www/lib/js/angular/angular-sanitize.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-sanitize.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular-scenario.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-scenario.js" />
+            <file
+                name="www/lib/js/angular/angular-touch.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-touch.js" />
+            <file
+                name="www/lib/js/angular/angular-touch.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-touch.min.js" />
+            <file
+                name="www/lib/js/angular/angular-touch.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular-touch.min.js.map" />
+            <file
+                name="www/lib/js/angular/angular.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular.js" />
+            <file
+                name="www/lib/js/angular/angular.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular.min.js" />
+            <file
+                name="www/lib/js/angular/angular.min.js.map"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/angular.min.js.map" />
+            <file
+                name="www/lib/js/angular/errors.json"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/errors.json" />
+            <file
+                name="www/lib/js/angular/version.json"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/version.json" />
+            <file
+                name="www/lib/js/angular/version.txt"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular/version.txt" />
+            <file
+                name="www/lib/js/angular-ui/angular-ui-router.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular-ui/angular-ui-router.js" />
+            <file
+                name="www/lib/js/angular-ui/angular-ui-router.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/angular-ui/angular-ui-router.min.js" />
+            <file
+                name="www/lib/js/ionic-angular.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/ionic-angular.js" />
+            <file
+                name="www/lib/js/ionic-angular.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/ionic-angular.min.js" />
+            <file
+                name="www/lib/js/ionic.bundle.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/ionic.bundle.js" />
+            <file
+                name="www/lib/js/ionic.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/ionic.js" />
+            <file
+                name="www/lib/js/ionic.min.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/lib/js/ionic.min.js" />
+            <file
+                name="www/plugins/com.pushwoosh.plugins.pushwoosh/www/PushNotification.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/com.pushwoosh.plugins.pushwoosh/www/PushNotification.js" />
+            <file
+                name="www/plugins/org.apache.cordova.device/www/device.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.device/www/device.js" />
+            <file
+                name="www/plugins/org.apache.cordova.dialogs/www/android/notification.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js" />
+            <file
+                name="www/plugins/org.apache.cordova.dialogs/www/notification.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js" />
+            <file
+                name="www/plugins/org.apache.cordova.inappbrowser/www/InAppBrowser.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.inappbrowser/www/InAppBrowser.js" />
+            <file
+                name="www/plugins/org.apache.cordova.network-information/www/Connection.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js" />
+            <file
+                name="www/plugins/org.apache.cordova.network-information/www/network.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.network-information/www/network.js" />
+            <file
+                name="www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js" />
+            <file
+                name="www/plugins/org.apache.cordova.statusbar/www/statusbar.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.statusbar/www/statusbar.js" />
+            <file
+                name="www/plugins/org.apache.cordova.vibration/www/vibration.js"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/plugins/org.apache.cordova.vibration/www/vibration.js" />
+            <file
+                name="www/res/icon/android/icon-36-ldpi.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/android/icon-36-ldpi.png" />
+            <file
+                name="www/res/icon/android/icon-48-mdpi.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/android/icon-48-mdpi.png" />
+            <file
+                name="www/res/icon/android/icon-72-hdpi.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/android/icon-72-hdpi.png" />
+            <file
+                name="www/res/icon/android/icon-96-xhdpi.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/android/icon-96-xhdpi.png" />
+            <file
+                name="www/res/icon/bada/icon-128.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/bada/icon-128.png" />
+            <file
+                name="www/res/icon/bada-wac/icon-48-type5.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/bada-wac/icon-48-type5.png" />
+            <file
+                name="www/res/icon/bada-wac/icon-50-type3.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/bada-wac/icon-50-type3.png" />
+            <file
+                name="www/res/icon/bada-wac/icon-80-type4.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/bada-wac/icon-80-type4.png" />
+            <file
+                name="www/res/icon/blackberry/icon-80.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/blackberry/icon-80.png" />
+            <file
+                name="www/res/icon/ios/icon-57-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/ios/icon-57-2x.png" />
+            <file
+                name="www/res/icon/ios/icon-57.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/ios/icon-57.png" />
+            <file
+                name="www/res/icon/ios/icon-72-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/ios/icon-72-2x.png" />
+            <file
+                name="www/res/icon/ios/icon-72.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/ios/icon-72.png" />
+            <file
+                name="www/res/icon/tizen/icon-128.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/tizen/icon-128.png" />
+            <file
+                name="www/res/icon/webos/icon-64.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/webos/icon-64.png" />
+            <file
+                name="www/res/icon/windows-phone/icon-173-tile.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/windows-phone/icon-173-tile.png" />
+            <file
+                name="www/res/icon/windows-phone/icon-48.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/windows-phone/icon-48.png" />
+            <file
+                name="www/res/icon/windows-phone/icon-62-tile.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/icon/windows-phone/icon-62-tile.png" />
+            <file
+                name="www/res/screen/android/screen-hdpi-landscape.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-hdpi-landscape.png" />
+            <file
+                name="www/res/screen/android/screen-hdpi-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-hdpi-portrait.png" />
+            <file
+                name="www/res/screen/android/screen-ldpi-landscape.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-ldpi-landscape.png" />
+            <file
+                name="www/res/screen/android/screen-ldpi-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-ldpi-portrait.png" />
+            <file
+                name="www/res/screen/android/screen-mdpi-landscape.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-mdpi-landscape.png" />
+            <file
+                name="www/res/screen/android/screen-mdpi-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-mdpi-portrait.png" />
+            <file
+                name="www/res/screen/android/screen-xhdpi-landscape.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-xhdpi-landscape.png" />
+            <file
+                name="www/res/screen/android/screen-xhdpi-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/android/screen-xhdpi-portrait.png" />
+            <file
+                name="www/res/screen/bada/screen-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/bada/screen-portrait.png" />
+            <file
+                name="www/res/screen/bada-wac/screen-type3.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/bada-wac/screen-type3.png" />
+            <file
+                name="www/res/screen/bada-wac/screen-type4.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/bada-wac/screen-type4.png" />
+            <file
+                name="www/res/screen/bada-wac/screen-type5.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/bada-wac/screen-type5.png" />
+            <file
+                name="www/res/screen/blackberry/screen-225.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/blackberry/screen-225.png" />
+            <file
+                name="www/res/screen/ios/screen-ipad-landscape-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-ipad-landscape-2x.png" />
+            <file
+                name="www/res/screen/ios/screen-ipad-landscape.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-ipad-landscape.png" />
+            <file
+                name="www/res/screen/ios/screen-ipad-portrait-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-ipad-portrait-2x.png" />
+            <file
+                name="www/res/screen/ios/screen-ipad-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-ipad-portrait.png" />
+            <file
+                name="www/res/screen/ios/screen-iphone-landscape-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-iphone-landscape-2x.png" />
+            <file
+                name="www/res/screen/ios/screen-iphone-landscape.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-iphone-landscape.png" />
+            <file
+                name="www/res/screen/ios/screen-iphone-portrait-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-iphone-portrait-2x.png" />
+            <file
+                name="www/res/screen/ios/screen-iphone-portrait-568h-2x.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-iphone-portrait-568h-2x.png" />
+            <file
+                name="www/res/screen/ios/screen-iphone-portrait.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/ios/screen-iphone-portrait.png" />
+            <file
+                name="www/res/screen/tizen/README.md"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/tizen/README.md" />
+            <file
+                name="www/res/screen/webos/screen-64.png"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/webos/screen-64.png" />
+            <file
+                name="www/res/screen/windows-phone/screen-portrait.jpg"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/res/screen/windows-phone/screen-portrait.jpg" />
+            <file
+                name="www/templates/detail.html"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/templates/detail.html" />
+            <file
+                name="www/templates/intro.html"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/templates/intro.html" />
+            <file
+                name="www/templates/list.html"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/templates/list.html" />
+            <file
+                name="www/templates/main.html"
+                path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/main/assets/www/templates/main.html" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/gcollins/Desktop/ProductDemo/platforms/android/productDemo/src/debug/assets" />
+    </dataSet>
+
+</merger>

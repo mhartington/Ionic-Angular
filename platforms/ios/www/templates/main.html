@@ -1,0 +1,47 @@
+<ion-view>
+
+	<ion-side-menus>
+
+		<fade-bar></fade-bar>
+
+		<ion-pane ion-side-menu-content id="nav-menu-pane" darken>
+
+			<ion-nav-bar class="bar-positive" hide-back-button="true"></ion-nav-bar>
+
+			<ion-nav-view animation="none" name="content"></ion-nav-view>
+
+		</ion-pane>
+
+		<ion-side-menu side="left">
+
+			<div class="bar bar-header bar-dark">
+
+				<a class="button button-clear button-full title dark-head" ui-sref="home">
+
+					Main Menu
+
+				</a>
+
+			</div>
+
+			<ion-content class="has-header dark" has-bouncing="true">
+
+				<div class="list" ng-controller="IndexCtrl">
+
+					<a ui-sref-active="active" ng-repeat="pet in pets | orderBy:'sku'" class="item" ui-sref="main.detail({petsId: pet.id })" ng-click="toggleMenu()">
+
+						<h3>{{pet.sku}}</h3>
+
+						<p>{{pet.title}}</p>
+
+					</a>
+
+				</div>
+
+			</ion-content>
+
+		</ion-side-menu>
+
+	</ion-side-menus>
+
+</ion-view>
