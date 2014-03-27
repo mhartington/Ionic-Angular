@@ -8,7 +8,7 @@
 
 			<ion-nav-bar class="bar-positive" hide-back-button="true"></ion-nav-bar>
 
-			<ion-nav-view animation="none" name="content"></ion-nav-view>
+			<ion-nav-view class="slide-left-right" name="content"></ion-nav-view>
 
 		</ion-pane>
 
@@ -28,7 +28,7 @@
 
 				<div class="list" ng-controller="IndexCtrl">
 
-					<a ui-sref-active="active" ng-repeat="pet in pets | orderBy:'sku'" class="item" ui-sref="main.detail({petsId: pet.id })" ng-click="toggleMenu()">
+					<a ui-sref-active="active" ng-repeat="pet in pets | orderBy:'sku'" class="item" ui-sref="main.detail({petsId: pet.id })" menu-toggle="left">
 
 						<h3>{{pet.sku}}</h3>
 
